@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  💻 <b>BCA | AWS Cloud | DevOps | CI/CD | 3-Tier Architecture | Node.js Deployment using Jenkins</b><br/>
+  💻 <b>BCA | AWS Cloud | DevOps | CI/CD | Terraform | Automation</b><br/>
   📍 Pune, Maharashtra, India
 </p>
 
