@@ -1,114 +1,80 @@
-<!-- ===================== BANNER ===================== -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3c72,100:2a5298&height=220&section=header&text=Rohit%20Bhusare&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=38" />
+<!-- -----------------  PROFILE VIEWS / BADGES  ----------------- -->
+<p align="right">
+  <img src="https://komarev.com/ghpvc/?username=rbhusare829&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
 </p>
 
-<h3 align="center">DevOps Learner | AWS | Terraform | Jenkins</h3>
+<!-- -----------------  NAME + MAIN TYPING ANIMATION  ----------------- -->
+<h1 align="center" style="font-size: 42px; font-weight: bold;">
+  🚀 Rohit Bhusare
+</h1>
 
 <p align="center">
-  🚀 Building cloud projects & scalable deployments  
-  <br/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=2F81F7&center=true&vCenter=true&width=800&lines=BCA+Graduate+from+Maharashtra;AWS+Cloud+%26+DevOps+Learner;Building+3-Tier+Architectures+on+AWS;Automating+Deployments+using+Jenkins+%26+Terraform" alt="Typing SVG" />
+</p>
+
+<p align="center">
+  💻 <b>BCA | AWS Cloud | DevOps | CI/CD | Terraform | Automation</b><br/>
   📍 Pune, Maharashtra, India
 </p>
 
 ---
 
-## 👨‍💻 About Me
-I am a **DevOps Learner** with hands-on experience in **AWS Cloud, Terraform, Ansible, and Jenkins**.  
-I enjoy building **real-world cloud infrastructure projects**, automating deployments, and learning DevOps best practices.
+## 🛠 Skills & Tech Stack (Animated Icons Section)
 
-- 🔹 Cloud & Automation Enthusiast  
-- 🔹 Project-based Learning  
-- 🔹 Continuous Improvement Mindset  
-
----
-
-## 🛠️ Tech Stack & Skills
-
-### ☁️ Cloud & DevOps
-<p>
-  <img src="https://skillicons.dev/icons?i=aws,terraform,jenkins,ansible" />
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=aws,terraform,jenkins,docker,githubactions,nginx,linux,bash,git,github,html,css,javascript,nodejs,python,mysql,vscode,postman&perline=9" />
 </p>
 
-### 🌐 Web & Version Control
-<p>
-  <img src="https://skillicons.dev/icons?i=html,git,gitlab" />
+### ☁ Cloud & Infrastructure
+- *AWS:* EC2, S3, RDS, IAM, VPC, Lambda, CloudWatch, Route53, DynamoDB  
+- *Serverless:* Lambda, EventBridge, SQS, SNS  
+- ** IaC:** Terraform, CloudFormation  
+
+### 🔧 DevOps & Automation
+- Jenkins • GitHub Actions • AWS CodePipeline  
+- Docker • Nginx • PM2 • CI/CD pipelines  
+
+### 💻 Programming & Web
+- Python • Bash • Flask • Node.js  
+- HTML • CSS • JavaScript • PHP  
+
+### 🗄 Databases
+- MySQL • AWS RDS • DynamoDB  
+
+### 🧩 Tools & Monitoring
+- Git • Postman • VS Code • Linux • CloudWatch  
+
+---
+
+## 🚀 What I'm Learning Right Now
+- AWS production architectures (EC2, RDS, VPC, ALB)  
+- Terraform modules + remote backend setups  
+- CI/CD with Jenkins + GitHub + AWS EC2  
+- CloudWatch monitoring + log insights  
+
+---
+
+## 📂 Featured DevOps Projects
+- 🏗 *AWS 3-Tier E-Commerce Infra* – EC2 + RDS + ALB + Terraform  
+- ⚙ *Jenkins CI/CD Pipeline* – Build → Test → Deploy to EC2  
+- ☁ *Serverless File Upload App* – S3 + Lambda + API Gateway  
+
+---
+
+## 🤝 Connect With Me
+
+<p align="center">
+  <a href="mailto:rbhusare829@gmail.com">
+    <img src="https://img.shields.io/badge/Email-rbhusare829%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  &nbsp;
+  <a href="https://www.linkedin.com/in/rohit-bhusare-84b94b368">
+    <img src="https://img.shields.io/badge/LinkedIn-Rohit%20Bhusare-blue?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
 </p>
-
-### 🧠 Core Concepts
-- Linux Administration  
-- CI/CD Pipelines  
-- Infrastructure as Code (IaC)  
-- Cloud Networking (VPC, Subnets, SG)  
-- Automation & Monitoring  
-
----
-
-## 🚀 Featured Projects
-
-### 🔹 AWS 3-Tier Architecture using Terraform
-- VPC with Public & Private Subnets  
-- Internet Gateway & NAT Gateway  
-- EC2 for Web, App & Database  
-- Secure & Scalable Architecture  
-
----
-
-### 🔹 Automated NGINX Deployment using Ansible
-- Configuration using Playbooks  
-- With & Without Handlers  
-- Idempotent Automation  
-- Amazon Linux EC2  
-
----
-
-### 🔹 2-Tier Application Deployment on AWS
-- Web Server + Database Server  
-- Ansible-based automation  
-- MariaDB / MySQL integration  
-
----
-
-### 🔹 CI/CD Pipeline using Jenkins
-- GitHub / GitLab integration  
-- Automated build & deployment  
-- Pipeline stages & job triggers  
-
----
-
-## ✨ Key Features
-✔️ Real-world AWS architectures  
-✔️ Fully automated deployments  
-✔️ Secure & scalable designs  
-✔️ Industry-standard DevOps tools  
-✔️ Beginner to Intermediate projects  
-
----
-
-## 🎓 Education
-**B. P. Sulakhe Commerce College, Barshi**  
-📍 Dist: Solapur, Maharashtra  
-🎓 Bachelor’s Degree  
-📅 2022 – 2025  
-
----
-
-## 📬 Contact Me
-📧 Email: **rbhusare829@gmail.com**  
-🔗 LinkedIn: **https://www.linkedin.com/in/rohitbhusare-84b94b368**
-
----
-
-## 📈 Career Goal
-To become a **professional DevOps Engineer** and work on **cloud-native, scalable systems** while continuously upgrading my skills.
-
----
-
-## ⚡ Fun Fact
-> "Automation is not replacing humans, it’s upgrading them." 🚀
 
 ---
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2a5298,100:1e3c72&height=120&section=footer"/>
+  Thanks for visiting my profile 🙏 | Keep Building 🚀
 </p>
