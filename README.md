@@ -1,118 +1,140 @@
-<!-- ===================== -->
-<!-- 🔥 NEON DEVOPS BANNER -->
-<!-- ===================== -->
+<div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=260&color=gradient&customColorList=12,14,15,20&text=Rohit%20Bhusare&fontSize=60&fontColor=00e5ff&animation=fadeIn&fontAlignY=40&desc=DevOps%20Engineer%20%7C%20AWS%20%7C%20Terraform%20%7C%20Docker&descAlignY=60" />
+<!-- Animated Header Banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:00d4ff&height=200&section=header&text=Rohit%20Bhusare&fontSize=60&fontColor=00d4ff&fontAlignY=38&desc=DevOps%20Engineer%20%7C%20AWS%20%7C%20Terraform%20%7C%20Docker&descAlignY=58&descColor=7fdbff&animation=fadeIn" />
 
-<!-- ===================== -->
-<!-- ✍️ NAME ANIMATION -->
-<!-- ===================== -->
+<!-- Typing Animation -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&multiline=false&width=600&lines=🚀+DevOps+Engineer;☁️+AWS+Cloud+Specialist;🔧+Terraform+%26+Ansible+IaC;🐳+Docker+%26+Container+Expert;⚙️+CI%2FCD+Pipeline+Builder" alt="Typing SVG" />
+</a>
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=34&duration=2500&pause=700&color=00E5FF&center=true&vCenter=true&width=750&lines=Hi+I'm+Rohit+Bhusare;DevOps+Engineer;AWS+%7C+Docker+%7C+Terraform;Automating+Cloud+Infrastructure" />
-</h1>
+<br/>
 
-<p align="center">
-  <b>🚀 Cloud • DevOps • Automation • AWS</b>
+<!-- Profile Views & Social Badges -->
+<p>
+  <img src="https://komarev.com/ghpvc/?username=rbhusare829&label=Profile%20Views&color=00d4ff&style=for-the-badge" />
+  <img src="https://img.shields.io/github/followers/rbhusare829?label=Followers&style=for-the-badge&color=00d4ff&labelColor=0d1117" />
 </p>
+
+</div>
 
 ---
 
 ## 🧠 About Me
 
-- 👨‍💻 DevOps Engineer (Fresher / Learner)
-- ☁️ AWS Cloud – EC2, VPC, IAM, S3
-- 🔁 CI/CD with Jenkins & GitHub
-- 🧱 Infrastructure as Code using Terraform
-- ⚙️ Automation using Ansible
-- 🐳 Docker & Containerized Apps
-- 📍 Pune, Maharashtra, India
+```yaml
+Name      : Rohit Bhusare
+Role      : DevOps Engineer (Fresher / Learner)
+Location  : 📍 Pune, Maharashtra, India
+Focus     : Cloud Infrastructure & Automation
+Learning  : Always growing, always building...
+```
+
+> *"Automate everything. Scale everything. Break nothing in production."* 🔥
 
 ---
 
-## ☁️ Cloud & DevOps Stack (CUSTOM ICONS)
+## ☁️ Cloud & DevOps Stack
 
-### ☁️ Cloud
+<div align="center">
+
+### 🌩️ Cloud Platforms
 <p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="55"/>
+  <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"/>
+  <img src="https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/IAM-DD344C?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/VPC-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"/>
 </p>
 
-### ⚙️ DevOps & Automation
+### 🔧 Infrastructure as Code
 <p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="45"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="45"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="45"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="45"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" height="45"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" height="45"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" height="45"/>
+  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white"/>
 </p>
 
-### 🌐 Scripting & Web
+### 🐳 Containers & Orchestration
 <p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="45"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="45"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="45"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
 </p>
+
+### ⚙️ CI/CD & Version Control
+<p>
+  <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</p>
+
+### 🖥️ OS & Scripting
+<p>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+</p>
+
+### 📊 Monitoring
+<p>
+  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white"/>
+</p>
+
+</div>
 
 ---
 
-## 📂 Featured DevOps Projects
+## 📊 GitHub Stats
 
-### 🔹 Automated NGINX Deployment using Ansible
-- EC2 automation
-- With handlers vs without handlers
-- Inventory & playbooks
+<div align="center">
 
-### 🔹 2-Tier Application Deployment (Ansible)
-- App Server + DB Server
-- Fully automated AWS EC2 setup
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=rbhusare829&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&text_color=ffffff&rank_icon=github" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=rbhusare829&theme=tokyonight&hide_border=true&background=0d1117&ring=00d4ff&fire=ff6b6b&currStreakLabel=00d4ff" />
 
-### 🔹 Dockerized Python App with NGINX
-- Multi-container architecture
-- Reverse proxy using NGINX
-- Hosted on AWS EC2
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rbhusare829&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=ffffff" />
 
-### 🔹 Terraform – 3-Tier Architecture
-- VPC, Subnets, IGW, NAT
-- Public & Private EC2
-- IaC best practices
+</div>
 
 ---
 
-## 📊 GitHub Stats (Neon Dark)
+## 🏆 GitHub Trophies
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=rbhusare829&show_icons=true&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=rbhusare829&theme=tokyonight&hide_border=true" />
-</p>
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=rbhusare829&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1" />
+</div>
 
 ---
 
-## 🐍 Animated Contribution Graph
+## 📈 Contribution Graph
 
-<p align="center">
-  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake-dark.svg" />
-</p>
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rbhusare829&bg_color=0d1117&color=00d4ff&line=00d4ff&point=ffffff&area=true&hide_border=true" />
+</div>
 
 ---
 
-## 🌐 Connect With Me
+## 🤝 Connect With Me
 
-<p align="center">
+<div align="center">
+  <a href="https://linkedin.com/in/rbhusare829">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
   <a href="mailto:rbhusare829@gmail.com">
-    <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
-  <a href="https://www.linkedin.com/in/rohitbhusare-84b94b368">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin">
+  <a href="https://github.com/rbhusare829">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
-</p>
+</div>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=rbhusare829&label=Profile+Views&color=00e5ff&style=flat" />
-</p>
+---
 
-⭐ If you like my work, give a ⭐ to my repositories!
+<div align="center">
+
+<!-- Footer Wave -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,100:0d1117&height=120&section=footer&animation=fadeIn"/>
+
+<sub>⚡ <b>Rohit Bhusare</b> — Building the future, one pipeline at a time 🚀</sub>
+
+</div>
