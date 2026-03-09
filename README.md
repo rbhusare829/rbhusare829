@@ -1,715 +1,438 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Rohit Bhusare — DevOps Portfolio Preview</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet"/>
-<style>
-  :root {
-    --cyan: #00fff2;
-    --purple: #7b2fff;
-    --pink: #ff00c8;
-    --dark: #050505;
-    --dark2: #0a0a12;
-    --dark3: #0d0221;
-    --glass: rgba(0,255,242,0.04);
-    --glass-border: rgba(0,255,242,0.15);
-  }
+<!-- ============================================================ -->
+<!--      ROHIT BHUSARE — ULTRA PREMIUM DEVOPS README v3.0        -->
+<!--      Cyberpunk ⚡ Animated ⚡ Futuristic ⚡ Premium           -->
+<!-- ============================================================ -->
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+<!-- ░░░░░░░░░ ULTRA ANIMATED HERO BANNER ░░░░░░░░░ -->
+<div align="center">
 
-  body {
-    background: var(--dark);
-    color: #fff;
-    font-family: 'Share Tech Mono', monospace;
-    overflow-x: hidden;
-    cursor: none;
-  }
-
-  /* CUSTOM CURSOR */
-  .cursor {
-    width: 20px; height: 20px;
-    border: 2px solid var(--cyan);
-    border-radius: 50%;
-    position: fixed; pointer-events: none;
-    transform: translate(-50%,-50%);
-    transition: all 0.1s ease;
-    z-index: 9999;
-    box-shadow: 0 0 10px var(--cyan), 0 0 20px var(--cyan);
-  }
-  .cursor-dot {
-    width: 5px; height: 5px;
-    background: var(--pink);
-    border-radius: 50%;
-    position: fixed; pointer-events: none;
-    transform: translate(-50%,-50%);
-    z-index: 9999;
-    box-shadow: 0 0 6px var(--pink);
-  }
-
-  /* ANIMATED BACKGROUND */
-  .bg-grid {
-    position: fixed; inset: 0;
-    background-image:
-      linear-gradient(rgba(0,255,242,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,255,242,0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
-    animation: gridPulse 4s ease-in-out infinite alternate;
-    z-index: 0;
-  }
-  @keyframes gridPulse {
-    from { opacity: 0.5; }
-    to { opacity: 1; }
-  }
-
-  /* FLOATING PARTICLES */
-  .particles { position: fixed; inset: 0; z-index: 0; overflow: hidden; }
-  .particle {
-    position: absolute;
-    border-radius: 50%;
-    animation: floatUp linear infinite;
-    opacity: 0;
-  }
-  @keyframes floatUp {
-    0%   { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-    10%  { opacity: 1; }
-    90%  { opacity: 0.6; }
-    100% { transform: translateY(-100px) rotate(720deg); opacity: 0; }
-  }
-
-  /* SCANLINES */
-  .scanlines {
-    position: fixed; inset: 0; z-index: 1; pointer-events: none;
-    background: repeating-linear-gradient(
-      0deg, transparent, transparent 2px,
-      rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px
-    );
-  }
-
-  /* CORNER DECORATIONS */
-  .corner { position: fixed; width: 60px; height: 60px; z-index: 5; }
-  .corner-tl { top: 15px; left: 15px; border-top: 2px solid var(--cyan); border-left: 2px solid var(--cyan); }
-  .corner-tr { top: 15px; right: 15px; border-top: 2px solid var(--pink); border-right: 2px solid var(--pink); }
-  .corner-bl { bottom: 15px; left: 15px; border-bottom: 2px solid var(--purple); border-left: 2px solid var(--purple); }
-  .corner-br { bottom: 15px; right: 15px; border-bottom: 2px solid var(--cyan); border-right: 2px solid var(--cyan); }
-
-  /* CONTENT */
-  .content { position: relative; z-index: 10; }
-
-  /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    padding: 40px 20px;
-    position: relative;
-    text-align: center;
-  }
-
-  .hero::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 50%,
-      rgba(123,47,255,0.12) 0%, transparent 70%);
-  }
-
-  .hero-glitch {
-    font-family: 'Orbitron', monospace;
-    font-size: clamp(42px, 7vw, 88px);
-    font-weight: 900;
-    color: var(--cyan);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    line-height: 1;
-    position: relative;
-    text-shadow:
-      0 0 10px var(--cyan),
-      0 0 30px var(--cyan),
-      0 0 60px rgba(0,255,242,0.4),
-      0 0 100px rgba(0,255,242,0.2);
-    animation: glitch 3s infinite;
-  }
-  @keyframes glitch {
-    0%,94%,100% { transform: translate(0); filter: none; }
-    95% { transform: translate(-3px, 2px); filter: hue-rotate(90deg); }
-    96% { transform: translate(3px, -2px); text-shadow: -3px 0 var(--pink), 3px 0 var(--cyan); }
-    97% { transform: translate(0); filter: none; }
-    98% { transform: translate(2px, 1px); filter: brightness(1.5); }
-    99% { transform: translate(-2px, -1px); filter: none; }
-  }
-
-  .hero-subtitle {
-    font-family: 'Orbitron', monospace;
-    font-size: clamp(12px, 2vw, 20px);
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    margin: 12px 0 30px;
-  }
-
-  .hero-role {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: clamp(15px, 2.2vw, 22px);
-    color: var(--pink);
-    letter-spacing: 0.08em;
-    text-shadow: 0 0 15px var(--pink), 0 0 30px rgba(255,0,200,0.4);
-    margin-bottom: 10px;
-  }
-
-  /* TYPING LINE */
-  .typing-line {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: clamp(13px, 1.6vw, 18px);
-    color: var(--cyan);
-    opacity: 0.8;
-    border-right: 2px solid var(--cyan);
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typeLoop 14s steps(40) infinite;
-    max-width: 100%;
-  }
-  @keyframes typeLoop {
-    0%,8% { width: 0; }
-    18%,28% { width: 38ch; }
-    36%,44% { width: 0; }
-    50%,60% { width: 32ch; }
-    68%,76% { width: 0; }
-    82%,92% { width: 36ch; }
-    100% { width: 0; }
-  }
-
-  /* NEON DIVIDER */
-  .neon-divider {
-    height: 2px;
-    margin: 50px auto;
-    max-width: 900px;
-    background: linear-gradient(90deg,
-      transparent 0%, var(--purple) 20%,
-      var(--cyan) 50%, var(--pink) 80%, transparent 100%);
-    box-shadow: 0 0 15px var(--cyan), 0 0 30px rgba(0,255,242,0.3);
-    position: relative;
-  }
-  .neon-divider::before, .neon-divider::after {
-    content: '◈';
-    position: absolute; top: 50%;
-    transform: translateY(-50%);
-    color: var(--cyan);
-    font-size: 18px;
-    text-shadow: 0 0 10px var(--cyan);
-  }
-  .neon-divider::before { left: -10px; }
-  .neon-divider::after  { right: -10px; }
-
-  /* SECTION */
-  section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
-
-  .section-title {
-    font-family: 'Orbitron', monospace;
-    font-size: clamp(16px, 2.5vw, 26px);
-    font-weight: 700;
-    color: var(--cyan);
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    margin-bottom: 40px;
-    display: flex; align-items: center; gap: 14px;
-    text-shadow: 0 0 15px var(--cyan);
-  }
-  .section-title::before {
-    content: '';
-    width: 4px; height: 28px;
-    background: linear-gradient(var(--cyan), var(--purple));
-    border-radius: 2px;
-    box-shadow: 0 0 10px var(--cyan);
-  }
-  .section-title::after {
-    content: '';
-    flex: 1; height: 1px;
-    background: linear-gradient(90deg, var(--cyan), transparent);
-    opacity: 0.4;
-  }
-
-  /* GLASS CARD */
-  .glass-card {
-    background: var(--glass);
-    border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    padding: 28px 32px;
-    backdrop-filter: blur(12px);
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  .glass-card::before {
-    content: '';
-    position: absolute; top: 0; left: 0; right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--cyan), transparent);
-    opacity: 0.6;
-  }
-  .glass-card:hover {
-    border-color: var(--cyan);
-    box-shadow: 0 0 30px rgba(0,255,242,0.1), inset 0 0 30px rgba(0,255,242,0.03);
-    transform: translateY(-3px);
-  }
-
-  /* TERMINAL */
-  .terminal {
-    background: #020202;
-    border: 1px solid rgba(0,255,242,0.2);
-    border-radius: 12px;
-    overflow: hidden;
-    font-family: 'Share Tech Mono', monospace;
-  }
-  .terminal-bar {
-    background: #111;
-    padding: 10px 16px;
-    display: flex; gap: 8px; align-items: center;
-    border-bottom: 1px solid rgba(0,255,242,0.1);
-  }
-  .t-dot { width: 12px; height: 12px; border-radius: 50%; }
-  .t-red { background: #ff5f57; box-shadow: 0 0 6px #ff5f57; }
-  .t-yellow { background: #ffbd2e; box-shadow: 0 0 6px #ffbd2e; }
-  .t-green { background: #28c840; box-shadow: 0 0 6px #28c840; }
-  .t-title {
-    margin-left: auto; margin-right: auto;
-    font-size: 12px; color: #555;
-    font-family: 'Share Tech Mono', monospace;
-  }
-  .terminal-body { padding: 24px 28px; font-size: 14px; line-height: 1.8; }
-  .t-prompt { color: var(--cyan); }
-  .t-cmd { color: #fff; }
-  .t-key { color: var(--pink); }
-  .t-val { color: #a8ff78; }
-  .t-str { color: #ffd700; }
-  .t-comment { color: #555; }
-
-  /* SKILLS */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
-  }
-  .skill-item {
-    background: rgba(0,255,242,0.03);
-    border: 1px solid rgba(0,255,242,0.1);
-    border-radius: 10px;
-    padding: 16px 20px;
-    transition: all 0.3s;
-  }
-  .skill-item:hover {
-    border-color: rgba(0,255,242,0.4);
-    transform: translateX(4px);
-  }
-  .skill-header {
-    display: flex; justify-content: space-between;
-    margin-bottom: 10px; font-size: 14px;
-  }
-  .skill-name { color: #fff; font-weight: 600; }
-  .skill-pct { color: var(--cyan); font-family: 'Orbitron', monospace; font-size: 13px; }
-  .skill-bar-bg {
-    height: 6px; background: rgba(255,255,255,0.06);
-    border-radius: 3px; overflow: hidden;
-  }
-  .skill-bar-fill {
-    height: 100%; border-radius: 3px;
-    position: relative; animation: barGrow 1.5s ease forwards;
-    transform-origin: left;
-  }
-  @keyframes barGrow { from { width: 0 !important; } }
-  .bar-cyan  { background: linear-gradient(90deg, var(--purple), var(--cyan)); box-shadow: 0 0 8px var(--cyan); }
-  .bar-pink  { background: linear-gradient(90deg, var(--purple), var(--pink)); box-shadow: 0 0 8px var(--pink); }
-  .bar-green { background: linear-gradient(90deg, var(--cyan), #00ff88); box-shadow: 0 0 8px #00ff88; }
-
-  /* TOOLS GRID */
-  .tools-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    gap: 14px;
-  }
-  .tool-chip {
-    background: rgba(0,255,242,0.04);
-    border: 1px solid rgba(0,255,242,0.12);
-    border-radius: 10px;
-    padding: 14px 10px;
-    text-align: center;
-    font-size: 12px;
-    color: rgba(255,255,255,0.75);
-    transition: all 0.3s ease;
-    cursor: default;
-    letter-spacing: 0.05em;
-  }
-  .tool-chip:hover {
-    background: rgba(0,255,242,0.1);
-    border-color: var(--cyan);
-    color: var(--cyan);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(0,255,242,0.15);
-  }
-  .tool-icon { font-size: 26px; display: block; margin-bottom: 6px; }
-
-  /* STATS GRID */
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-  }
-  .stat-card {
-    background: rgba(0,255,242,0.03);
-    border: 1px solid rgba(0,255,242,0.12);
-    border-radius: 14px;
-    padding: 24px 20px;
-    text-align: center;
-    transition: all 0.3s;
-  }
-  .stat-card:hover {
-    border-color: var(--cyan);
-    box-shadow: 0 0 25px rgba(0,255,242,0.12);
-    transform: scale(1.03);
-  }
-  .stat-num {
-    font-family: 'Orbitron', monospace;
-    font-size: 36px; font-weight: 900;
-    background: linear-gradient(135deg, var(--cyan), var(--purple));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .stat-label { font-size: 11px; color: #555; letter-spacing: 0.15em; margin-top: 6px; }
-
-  /* PROJECTS TABLE */
-  .proj-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .proj-table th {
-    font-family: 'Orbitron', monospace;
-    font-size: 11px; letter-spacing: 0.15em;
-    color: var(--cyan); text-align: left;
-    padding: 12px 16px; border-bottom: 1px solid rgba(0,255,242,0.2);
-    background: rgba(0,255,242,0.03);
-  }
-  .proj-table td { padding: 14px 16px; border-bottom: 1px solid rgba(255,255,255,0.04); color: rgba(255,255,255,0.8); }
-  .proj-table tr:hover td { background: rgba(0,255,242,0.03); color: #fff; }
-  .proj-rank { font-family: 'Orbitron', monospace; font-size: 15px; }
-  .proj-name { color: var(--cyan); font-weight: 600; }
-  .badge-live   { background: rgba(0,255,136,0.15); color: #00ff88; border: 1px solid #00ff88; padding: 3px 10px; border-radius: 20px; font-size: 10px; letter-spacing: 0.1em; }
-  .badge-active { background: rgba(0,255,242,0.1); color: var(--cyan); border: 1px solid var(--cyan); padding: 3px 10px; border-radius: 20px; font-size: 10px; }
-  .badge-flag   { background: rgba(255,0,200,0.15); color: var(--pink); border: 1px solid var(--pink); padding: 3px 10px; border-radius: 20px; font-size: 10px; }
-
-  /* CONNECT */
-  .connect-grid { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
-  .social-btn {
-    display: flex; align-items: center; gap: 10px;
-    padding: 14px 24px;
-    border-radius: 10px; font-size: 14px; font-family: 'Orbitron', monospace;
-    font-weight: 700; letter-spacing: 0.08em;
-    text-decoration: none; border: 1px solid;
-    transition: all 0.3s ease; cursor: pointer;
-    text-transform: uppercase;
-  }
-  .btn-linkedin { color: #0A66C2; border-color: #0A66C2; background: rgba(10,102,194,0.08); }
-  .btn-linkedin:hover { background: rgba(10,102,194,0.2); box-shadow: 0 0 20px rgba(10,102,194,0.3); transform: translateY(-3px); }
-  .btn-gmail  { color: #EA4335; border-color: #EA4335; background: rgba(234,67,53,0.08); }
-  .btn-gmail:hover  { background: rgba(234,67,53,0.2); box-shadow: 0 0 20px rgba(234,67,53,0.3); transform: translateY(-3px); }
-  .btn-github { color: var(--cyan); border-color: var(--cyan); background: rgba(0,255,242,0.05); }
-  .btn-github:hover { background: rgba(0,255,242,0.15); box-shadow: 0 0 20px rgba(0,255,242,0.25); transform: translateY(-3px); }
-  .btn-port   { color: var(--pink); border-color: var(--pink); background: rgba(255,0,200,0.05); }
-  .btn-port:hover   { background: rgba(255,0,200,0.15); box-shadow: 0 0 20px rgba(255,0,200,0.25); transform: translateY(-3px); }
-
-  /* FOOTER */
-  .footer {
-    text-align: center; padding: 60px 20px 40px;
-    background: linear-gradient(0deg, rgba(0,255,242,0.04), transparent);
-    border-top: 1px solid rgba(0,255,242,0.08);
-    font-size: 13px; color: #444; letter-spacing: 0.1em;
-    position: relative; z-index: 10;
-  }
-  .footer-motto {
-    font-family: 'Orbitron', monospace;
-    font-size: clamp(13px, 2vw, 18px);
-    color: var(--cyan); margin-bottom: 10px;
-    text-shadow: 0 0 20px var(--cyan);
-    animation: pulse 2s ease-in-out infinite;
-  }
-  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.6; } }
-
-  /* SCROLL */
-  ::-webkit-scrollbar { width: 4px; }
-  ::-webkit-scrollbar-track { background: var(--dark); }
-  ::-webkit-scrollbar-thumb { background: var(--cyan); border-radius: 2px; }
-
-  /* BADGE ROW */
-  .badges { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 20px 0; }
-  .nbadge {
-    padding: 6px 16px; border-radius: 20px; font-size: 12px;
-    font-family: 'Share Tech Mono', monospace; letter-spacing: 0.1em;
-    border: 1px solid; animation: badgePulse 3s ease-in-out infinite;
-  }
-  .nb-cyan  { color: var(--cyan); border-color: var(--cyan); background: rgba(0,255,242,0.06); }
-  .nb-pink  { color: var(--pink); border-color: var(--pink); background: rgba(255,0,200,0.06); animation-delay: 1s; }
-  .nb-purple{ color: #a78bff; border-color: #7b2fff; background: rgba(123,47,255,0.08); animation-delay: 2s; }
-  @keyframes badgePulse { 0%,100% { box-shadow: none; } 50% { box-shadow: 0 0 12px currentColor; } }
-</style>
-</head>
-<body>
-
-<div class="cursor" id="cursor"></div>
-<div class="cursor-dot" id="cursorDot"></div>
-<div class="bg-grid"></div>
-<div class="particles" id="particles"></div>
-<div class="scanlines"></div>
-<div class="corner corner-tl"></div>
-<div class="corner corner-tr"></div>
-<div class="corner corner-bl"></div>
-<div class="corner corner-br"></div>
-
-<div class="content">
-
-  <!-- ── HERO ── -->
-  <div class="hero">
-    <div class="hero-glitch">ROHIT BHUSARE</div>
-    <div class="hero-subtitle">◈ &nbsp; rbhusare829 &nbsp; ◈ &nbsp; Maharashtra, India &nbsp; ◈</div>
-    <div class="hero-role">⚡ Senior DevOps Engineer &nbsp;|&nbsp; AWS Cloud Architect &nbsp;|&nbsp; Automation Wizard ⚡</div>
-    <div style="height:8px"></div>
-    <div class="typing-line">🚀 Deploying to Production... Automating Everything...</div>
-    <div style="height:32px"></div>
-    <div class="badges">
-      <span class="nbadge nb-cyan">☁️ AWS Cloud</span>
-      <span class="nbadge nb-pink">🐳 Docker & K8s</span>
-      <span class="nbadge nb-purple">🏗️ Terraform IaC</span>
-      <span class="nbadge nb-cyan">🔁 Jenkins CI/CD</span>
-      <span class="nbadge nb-pink">🛡️ DevSecOps</span>
-      <span class="nbadge nb-purple">📊 Prometheus + Grafana</span>
-    </div>
-  </div>
-
-  <div class="neon-divider"></div>
-
-  <!-- ── ABOUT ── -->
-  <section>
-    <div class="section-title">System Profile — whoami</div>
-    <div class="terminal">
-      <div class="terminal-bar">
-        <div class="t-dot t-red"></div>
-        <div class="t-dot t-yellow"></div>
-        <div class="t-dot t-green"></div>
-        <div class="t-title">rbhusare829@devops-city:~$ bash</div>
-      </div>
-      <div class="terminal-body">
-        <div><span class="t-prompt">$ </span><span class="t-cmd">cat /etc/profile.json</span></div>
-        <br/>
-        <div><span class="t-comment">// ── IDENTITY ──────────────────────────────────────────</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"name"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-comment">:</span> <span class="t-str">"Rohit Bhusare"</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"role"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-comment">:</span> <span class="t-str">"Senior DevOps Engineer | Cloud Architect"</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"location"</span>&nbsp;&nbsp;<span class="t-comment">:</span> <span class="t-str">"Maharashtra, India 🇮🇳"</span></div>
-        <br/>
-        <div><span class="t-comment">// ── STACK ──────────────────────────────────────────────</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"cloud"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-comment">:</span> <span class="t-val">[ EC2, EKS, Lambda, RDS, S3, VPC, IAM, CDN ]</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"iac"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-comment">:</span> <span class="t-val">[ Terraform, Ansible, CDK, CloudFormation ]</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"containers"</span><span class="t-comment">:</span> <span class="t-val">[ Docker, Kubernetes, Helm, ECS, Fargate ]</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"cicd"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-comment">:</span> <span class="t-val">[ Jenkins, GitHub Actions, ArgoCD, GitLab ]</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"monitoring"</span><span class="t-comment">:</span> <span class="t-val">[ Prometheus, Grafana, ELK Stack, CloudWatch ]</span></div>
-        <div>&nbsp;&nbsp;<span class="t-key">"languages"</span> <span class="t-comment">:</span> <span class="t-val">[ Python, Bash, YAML, HCL, Node.js ]</span></div>
-        <br/>
-        <div><span class="t-prompt">$ </span><span class="t-cmd">echo $PHILOSOPHY</span></div>
-        <div><span style="color:#a8ff78">▶ "⚡ Automate Everything. Break Nothing. Ship Fast."</span></div>
-        <br/>
-        <div><span class="t-prompt">$ </span><span class="t-cmd">echo $STATUS</span></div>
-        <div><span style="color:#00ff88">▶ 🟢 ONLINE — Available for Cloud Projects & Consulting</span></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="neon-divider"></div>
-
-  <!-- ── TOOLS ── -->
-  <section>
-    <div class="section-title">Tech Arsenal</div>
-    <div class="tools-grid">
-      <div class="tool-chip"><span class="tool-icon">☁️</span>AWS</div>
-      <div class="tool-chip"><span class="tool-icon">🐳</span>Docker</div>
-      <div class="tool-chip"><span class="tool-icon">☸️</span>Kubernetes</div>
-      <div class="tool-chip"><span class="tool-icon">🏗️</span>Terraform</div>
-      <div class="tool-chip"><span class="tool-icon">🔁</span>Jenkins</div>
-      <div class="tool-chip"><span class="tool-icon">🐧</span>Linux</div>
-      <div class="tool-chip"><span class="tool-icon">🔀</span>Git</div>
-      <div class="tool-chip"><span class="tool-icon">🌐</span>Nginx</div>
-      <div class="tool-chip"><span class="tool-icon">📦</span>Ansible</div>
-      <div class="tool-chip"><span class="tool-icon">⚙️</span>GitHub Actions</div>
-      <div class="tool-chip"><span class="tool-icon">📊</span>Prometheus</div>
-      <div class="tool-chip"><span class="tool-icon">📈</span>Grafana</div>
-      <div class="tool-chip"><span class="tool-icon">📋</span>ELK Stack</div>
-      <div class="tool-chip"><span class="tool-icon">🐍</span>Python</div>
-      <div class="tool-chip"><span class="tool-icon">🛡️</span>SonarQube</div>
-      <div class="tool-chip"><span class="tool-icon">🔐</span>Vault</div>
-    </div>
-  </section>
-
-  <div class="neon-divider"></div>
-
-  <!-- ── SKILLS ── -->
-  <section>
-    <div class="section-title">Skill Matrix</div>
-    <div class="skills-grid">
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">☁️ AWS Cloud</span><span class="skill-pct">90%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-cyan" style="width:90%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">🐧 Linux / Shell</span><span class="skill-pct">90%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-green" style="width:90%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">🐳 Docker</span><span class="skill-pct">85%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-cyan" style="width:85%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">🔁 CI/CD Pipelines</span><span class="skill-pct">85%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-pink" style="width:85%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">☸️ Kubernetes / EKS</span><span class="skill-pct">78%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-cyan" style="width:78%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">🏗️ Terraform</span><span class="skill-pct">72%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-pink" style="width:72%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">🐍 Python</span><span class="skill-pct">72%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-green" style="width:72%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">📦 Ansible</span><span class="skill-pct">68%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-cyan" style="width:68%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">📊 Prometheus + Grafana</span><span class="skill-pct">65%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-pink" style="width:65%"></div></div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-header"><span class="skill-name">🛡️ DevSecOps</span><span class="skill-pct">60%</span></div>
-        <div class="skill-bar-bg"><div class="skill-bar-fill bar-green" style="width:60%"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="neon-divider"></div>
-
-  <!-- ── PROJECTS ── -->
-  <section>
-    <div class="section-title">Top 10 DevOps Projects</div>
-    <div class="glass-card">
-      <table class="proj-table">
-        <thead>
-          <tr>
-            <th>#</th><th>Project</th><th>Description</th><th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td class="proj-rank">🥇</td><td class="proj-name">AWS Infrastructure Automation</td><td>Modular Terraform — VPC, EC2, RDS, S3, IAM</td><td><span class="badge-live">LIVE</span></td></tr>
-          <tr><td class="proj-rank">🥈</td><td class="proj-name">Jenkins CI/CD Mega Pipeline</td><td>Code→SAST→Build→Scan→ECR→EKS deploy</td><td><span class="badge-live">LIVE</span></td></tr>
-          <tr><td class="proj-rank">🥉</td><td class="proj-name">Kubernetes Microservices</td><td>EKS prod — HPA, RBAC, Ingress, Helm charts</td><td><span class="badge-live">LIVE</span></td></tr>
-          <tr><td class="proj-rank">4️⃣</td><td class="proj-name">Dockerized App Deployment</td><td>Multi-container — Docker Compose, Nginx SSL</td><td><span class="badge-live">LIVE</span></td></tr>
-          <tr><td class="proj-rank">5️⃣</td><td class="proj-name">GitHub Actions CI/CD</td><td>Automated build, test, security, deploy</td><td><span class="badge-active">ACTIVE</span></td></tr>
-          <tr><td class="proj-rank">6️⃣</td><td class="proj-name">Prometheus + Grafana Stack</td><td>Full K8s observability + Alertmanager</td><td><span class="badge-active">ACTIVE</span></td></tr>
-          <tr><td class="proj-rank">7️⃣</td><td class="proj-name">ELK Logging Platform</td><td>Centralized — Elasticsearch, Logstash, Kibana</td><td><span class="badge-active">ACTIVE</span></td></tr>
-          <tr><td class="proj-rank">8️⃣</td><td class="proj-name">Nginx Reverse Proxy Infra</td><td>SSL/TLS, rate limiting, WAF, Certbot</td><td><span class="badge-active">ACTIVE</span></td></tr>
-          <tr><td class="proj-rank">9️⃣</td><td class="proj-name">Auto Scaling Architecture</td><td>AWS ASG + CloudWatch metrics + Spot instances</td><td><span class="badge-active">ACTIVE</span></td></tr>
-          <tr><td class="proj-rank">🔟</td><td class="proj-name">End-to-End DevOps Platform</td><td>Full GitOps — Git→Jenkins→ECR→EKS→Monitor</td><td><span class="badge-flag">FLAGSHIP</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <div class="neon-divider"></div>
-
-  <!-- ── STATS ── -->
-  <section>
-    <div class="section-title">GitHub Stats</div>
-    <div class="stats-grid">
-      <div class="stat-card"><div class="stat-num" id="c1">0</div><div class="stat-label">TOTAL COMMITS</div></div>
-      <div class="stat-card"><div class="stat-num" id="c2">0</div><div class="stat-label">REPOSITORIES</div></div>
-      <div class="stat-card"><div class="stat-num" id="c3">0</div><div class="stat-label">PULL REQUESTS</div></div>
-      <div class="stat-card"><div class="stat-num" id="c4">0</div><div class="stat-label">ISSUES SOLVED</div></div>
-      <div class="stat-card"><div class="stat-num" id="c5">0</div><div class="stat-label">CONTRIBUTIONS</div></div>
-      <div class="stat-card"><div class="stat-num" id="c6">0</div><div class="stat-label">FOLLOWERS</div></div>
-    </div>
-    <br/>
-    <div style="text-align:center;opacity:0.5;font-size:13px;">
-      Live GitHub widgets load on GitHub — visit <strong style="color:var(--cyan)">github.com/rbhusare829</strong> to see real stats
-    </div>
-  </section>
-
-  <div class="neon-divider"></div>
-
-  <!-- ── CONNECT ── -->
-  <section>
-    <div class="section-title">Connect — Let's Build Together</div>
-    <div class="connect-grid">
-      <a class="social-btn btn-linkedin" href="https://linkedin.com/in/rohit-bhusare" target="_blank">💼 LinkedIn</a>
-      <a class="social-btn btn-gmail" href="mailto:rbhusare829@gmail.com">📧 Gmail</a>
-      <a class="social-btn btn-github" href="https://github.com/rbhusare829" target="_blank">🐙 GitHub</a>
-      <a class="social-btn btn-port" href="https://rbhusare829.github.io" target="_blank">🌐 Portfolio</a>
-    </div>
-  </section>
-
-  <!-- ── FOOTER ── -->
-  <div class="footer">
-    <div class="footer-motto">⚡ AUTOMATE EVERYTHING. BREAK NOTHING. SHIP FAST. ⚡</div>
-    <div>rbhusare829 &nbsp;◈&nbsp; DevOps Engineer &nbsp;◈&nbsp; Maharashtra, India 🇮🇳</div>
-    <br/>
-    <div>Built with ⚡ passion for cloud engineering & automation</div>
-  </div>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,15:0d0221,30:00fff2,50:7b2fff,70:ff00c8,85:0d0221,100:000000&height=350&section=header&text=ROHIT%20BHUSARE&fontSize=82&fontColor=00fff2&animation=twinkling&fontAlignY=35&desc=━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━&descSize=12&descAlignY=52&descColor=00fff2&stroke=00fff2&strokeWidth=3" width="100%"/>
 
 </div>
 
-<script>
-  // Custom cursor
-  const cursor = document.getElementById('cursor');
-  const dot = document.getElementById('cursorDot');
-  document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-    dot.style.left = e.clientX + 'px';
-    dot.style.top = e.clientY + 'px';
-  });
+<!-- MATRIX RAIN EFFECT (GIF simulation) -->
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=900&size=13&duration=50&pause=5000&color=00FFF2&background=00000000&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=30&lines=01001001+01001110+01000110+01010010+01000001+01010011+01010100+01010010+01010101+01000011+01010100+01010101+01010010+01000101" alt="matrix"/>
+</div>
 
-  // Floating particles
-  const colors = ['#00fff2','#7b2fff','#ff00c8','#ffffff'];
-  const container = document.getElementById('particles');
-  for (let i = 0; i < 50; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    const size = Math.random() * 4 + 1;
-    p.style.cssText = `
-      width:${size}px; height:${size}px;
-      left:${Math.random()*100}%;
-      background:${colors[Math.floor(Math.random()*colors.length)]};
-      animation-duration:${Math.random()*15+8}s;
-      animation-delay:${Math.random()*10}s;
-      box-shadow: 0 0 ${size*3}px currentColor;
-    `;
-    container.appendChild(p);
-  }
+<!-- MAIN TYPING TITLE -->
+<div align="center">
 
-  // Counter animation
-  function animateCounter(id, target, suffix='') {
-    let start = 0;
-    const el = document.getElementById(id);
-    const dur = 2000;
-    const step = target / (dur / 16);
-    const timer = setInterval(() => {
-      start = Math.min(start + step, target);
-      el.textContent = Math.floor(start) + suffix;
-      if (start >= target) clearInterval(timer);
-    }, 16);
-  }
-  setTimeout(() => {
-    animateCounter('c1', 847, '+');
-    animateCounter('c2', 32, '');
-    animateCounter('c3', 156, '+');
-    animateCounter('c4', 94, '+');
-    animateCounter('c5', 1200, '+');
-    animateCounter('c6', 48, '');
-  }, 500);
-</script>
-</body>
-</html>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=28&duration=2200&pause=700&color=00FFF2&background=00000000&center=true&vCenter=true&multiline=false&repeat=true&width=820&height=60&lines=⚡+DevOps+Engineer+%7C+Cloud+Architect;☁️+AWS+Specialist+%7C+Infrastructure+Expert;🐳+Docker+%26+Kubernetes+Engineer;🏗️+Terraform+IaC+%7C+GitOps+%7C+ArgoCD;🔁+Jenkins+%7C+GitHub+Actions+%7C+CI%2FCD;🛡️+DevSecOps+%7C+Zero+Trust+Security;📊+Prometheus+%7C+Grafana+%7C+Observability)](https://git.io/typing-svg)
+
+</div>
+
+<!-- SUBTITLE TYPEWRITER -->
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=16&duration=4000&pause=2000&color=FF00C8&background=00000000&center=true&vCenter=true&multiline=false&repeat=true&width=700&height=30&lines=►+Automating+Infrastructure+since+Day+One+◄;►+Cloud-Native+%7C+Container-First+%7C+GitOps-Driven+◄;►+Maharashtra%2C+India+🇮🇳+%7C+Open+to+Global+Collab+◄)](https://git.io/typing-svg)
+
+</div>
+
+<!-- ANIMATED LASER DIVIDER -->
+<div align="center">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="30" width="100%">
+</div>
+
+<!-- NEON STATS BADGES -->
+<div align="center">
+
+[![Visitors](https://komarev.com/ghpvc/?username=rbhusare829&label=◈%20VISITORS&color=00fff2&style=for-the-badge&abbreviated=true)](https://github.com/rbhusare829)&nbsp;
+[![Followers](https://img.shields.io/github/followers/rbhusare829?label=◈%20FOLLOWERS&style=for-the-badge&color=7b2fff&labelColor=050505)](https://github.com/rbhusare829?tab=followers)&nbsp;
+[![Stars](https://img.shields.io/github/stars/rbhusare829?label=◈%20TOTAL%20STARS&style=for-the-badge&color=ff00c8&labelColor=050505)](https://github.com/rbhusare829)&nbsp;
+![Location](https://img.shields.io/badge/◈%20INDIA-Maharashtra-00fff2?style=for-the-badge&labelColor=050505)
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ 3D DEVOPS CITY ░░░░░░░░░ -->
+## 🌆 &nbsp;`[ DEVOPS CITY — Infrastructure Skyline ]`
+
+<div align="center">
+
+```
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║    ░░░░░░░░░░░░░░░░░░  DEVOPS CITY v3.0  ░░░░░░░░░░░░░░░░░░░░░░             ║
+║    ░░    rbhusare829 | AWS + K8s + Docker + Terraform + Jenkins    ░░         ║
+║    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░             ║
+║                                                                               ║
+║                         ★ CLOUD LAYER ★                                      ║
+║    ╭──────────────────────────────────────────────────────────────╮           ║
+║    │   ⚡⚡⚡  A W S  C L O U D  R E G I O N  ⚡⚡⚡              │           ║
+║    │  [us-east-1] [us-west-2] [ap-south-1] [eu-west-1]           │           ║
+║    ╰──────────────────────────────────────────────────────────────╯           ║
+║           ↓              ↓              ↓              ↓                      ║
+║                                                                               ║
+║    ▄████▄  ▄████▄  ▄████▄  ▄████▄   ▄██▄    ▄████▄  ▄████▄  ▄████▄          ║
+║    █ EC2 █  █ RDS █  █ CDN █  █ EKS █   █ S3 █   █ IAM █  █ALB █  █ λ  █    ║
+║    █▓▓▓▓█  █▓▓▓▓█  █▒▒▒▒█  █▓▓▓▓█   █▒▒▒█   █▓▓▓▓█  █▒▒▒▒█  █▓▓▓▓█          ║
+║    █▒▒▒▒█  █▒▒▒▒█  █▓▓▓▓█  █▒▒▒▒█   █▓▓▓█   █▒▒▒▒█  █▓▓▓▓█  █▒▒▒▒█          ║
+║    █████████████████████████████████████████████████████████████████          ║
+║         AWS Skyscrapers ↑              K8s Control Tower ↑                   ║
+║                                                                               ║
+║    ════════════════  DATA HIGHWAYS & PIPELINE ROADS  ════════════             ║
+║                                                                               ║
+║    [GitHub] ══▶ [Jenkins] ══▶ [SonarQube] ══▶ [Docker Build]                ║
+║        ↓                                           ↓                         ║
+║    [ArgoCD] ◀══ [ECR Registry] ◀══════════ [Trivy Scan]                      ║
+║        ↓                                                                      ║
+║    ☸️ EKS ══▶ [Pod] [Pod] [Pod] ══▶ [ALB] ══▶ [CloudFront] ══▶ 🌐 Users     ║
+║        ↓                                                                      ║
+║    [RDS Aurora] + [ElastiCache] + [S3] + [CloudWatch + Prometheus]           ║
+║                                                                               ║
+║    🐳 Container Modules   🎛️ K8s Towers   📊 Grafana Dashboards             ║
+║    ┌───┐ ┌───┐ ┌───┐     ╔═══════════╗    ╔══════════════════╗              ║
+║    │ C │ │ C │ │ C │     ║  ☸️  K8S  ║    ║ 📈 LIVE METRICS ║              ║
+║    │ 01│ │ 02│ │ 03│     ║  Master  ║    ║ CPU: ████░  78% ║              ║
+║    └───┘ └───┘ └───┘     ║ Node x3  ║    ║ MEM: ███░░  65% ║              ║
+║                           ╚═══════════╝    ╚══════════════════╝              ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ TERMINAL WHOAMI ░░░░░░░░░ -->
+## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40">&nbsp; `[ SYSTEM — whoami ]`
+
+<div align="center">
+
+```zsh
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  rbhusare829@devops-city:~$ cat profile.json                                 │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  {                                                                           │
+│    "name"         :  "Rohit Bhusare",                                        │
+│    "username"     :  "rbhusare829",                                          │
+│    "role"         :  "Senior DevOps Engineer | Cloud Architect",             │
+│    "location"     :  "Maharashtra, India  🇮🇳",                              │
+│    "cloud"        :  "AWS ☁️  [ EC2 · EKS · Lambda · RDS · S3 · VPC ]",    │
+│    "iac"          :  [ "Terraform", "Ansible", "CDK", "CloudFormation" ],   │
+│    "containers"   :  [ "Docker", "Kubernetes", "Helm", "ECS", "Fargate" ],  │
+│    "cicd"         :  [ "Jenkins", "GitHub Actions", "ArgoCD", "GitLab" ],   │
+│    "monitoring"   :  [ "Prometheus", "Grafana", "ELK", "CloudWatch" ],      │
+│    "devsecops"    :  [ "SonarQube", "Trivy", "Vault", "GuardDuty" ],        │
+│    "languages"    :  [ "Python 🐍", "Bash ⚙️", "YAML", "HCL", "Node.js" ], │
+│    "os"           :  "Linux — Ubuntu · CentOS · Amazon Linux",              │
+│    "philosophy"   :  "⚡ Automate Everything. Break Nothing. Ship Fast.",   │
+│    "status"       :  "🟢 ONLINE — Open to Consulting & Collaborations"      │
+│  }                                                                           │
+│                                                                              │
+│  rbhusare829@devops-city:~$ echo $UPTIME                                     │
+│  > 99.99% — Zero downtime deployments only 🚀                               │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ TECH ARSENAL ░░░░░░░░░ -->
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="38">&nbsp; `[ TECH ARSENAL ]`
+
+<div align="center">
+
+**`━━━━━━━━━━━━━━━━━━━ ☁️  CLOUD ━━━━━━━━━━━━━━━━━━━`**
+
+<img src="https://skillicons.dev/icons?i=aws,gcp,azure&theme=dark&perline=3" height="65"/>
+
+**`━━━━━━━━━━━━━━━━━ 🐳  CONTAINERS ━━━━━━━━━━━━━━━━━`**
+
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,helm&theme=dark&perline=3" height="65"/>
+
+**`━━━━━━━━━━━━━━━━━━━ ⚙️  IaC ━━━━━━━━━━━━━━━━━━━━━`**
+
+<img src="https://skillicons.dev/icons?i=terraform,ansible,bash&theme=dark&perline=3" height="65"/>
+
+**`━━━━━━━━━━━━━━━━━━ 🔁  CI/CD ━━━━━━━━━━━━━━━━━━━━`**
+
+<img src="https://skillicons.dev/icons?i=jenkins,githubactions,gitlab&theme=dark&perline=3" height="65"/>
+
+**`━━━━━━━━━━━━━━━━━ 💻  LANGUAGES ━━━━━━━━━━━━━━━━━`**
+
+<img src="https://skillicons.dev/icons?i=python,nodejs,linux&theme=dark&perline=3" height="65"/>
+
+**`━━━━━━━━━━━━━━━━━ 📊  MONITORING ━━━━━━━━━━━━━━━━`**
+
+<img src="https://skillicons.dev/icons?i=prometheus,grafana&theme=dark&perline=2" height="65"/>&nbsp;&nbsp;<img src="https://img.shields.io/badge/ELK-005571?style=for-the-badge&logo=elastic&logoColor=white" height="50"/>
+
+**`━━━━━━━━━━━━━━━━━ 🔧  VCS & WEB ━━━━━━━━━━━━━━━━━`**
+
+<img src="https://skillicons.dev/icons?i=git,github,nginx&theme=dark&perline=3" height="65"/>
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ SKILL MATRIX ░░░░░░░░░ -->
+## ⚡ `[ SKILL MATRIX ]`
+
+<div align="center">
+
+```
+ ╔══════════════════════════════════════════════════════════════════════╗
+ ║              rbhusare829 — DEVOPS SKILL MATRIX v2.0                  ║
+ ╠══════════════════════════════════════════════════════════════════════╣
+ ║                                                                      ║
+ ║  ☁️  AWS Cloud         ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱  90%  ★★★★★  Expert   ║
+ ║  🐧 Linux / Bash       ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱  90%  ★★★★★  Expert   ║
+ ║  🐳 Docker             ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱  85%  ★★★★☆  Adv.    ║
+ ║  🔁 CI/CD Pipelines    ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱  85%  ★★★★☆  Adv.    ║
+ ║  ☸️  Kubernetes/EKS    ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱  78%  ★★★★☆  Adv.    ║
+ ║  🏗️  Terraform IaC     ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱  72%  ★★★☆☆  Prof.   ║
+ ║  🐍 Python             ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱  72%  ★★★☆☆  Prof.   ║
+ ║  📦 Ansible            ▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱  68%  ★★★☆☆  Prof.   ║
+ ║  📊 Prometheus+Grafana ▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱  65%  ★★★☆☆  Prof.   ║
+ ║  🛡️  DevSecOps         ▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱  60%  ★★★☆☆  Growing ║
+ ║                                                                      ║
+ ╚══════════════════════════════════════════════════════════════════════╝
+```
+
+| Technology | Visual Bar | % | Stars |
+|:-----------|:-----------|:-:|:-----:|
+| ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white) **AWS Cloud** | `▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▱▱` | **90%** | ⭐⭐⭐⭐⭐ |
+| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) **Linux / Bash** | `▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▱▱` | **90%** | ⭐⭐⭐⭐⭐ |
+| ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) **Docker** | `▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▱▱▱` | **85%** | ⭐⭐⭐⭐½ |
+| ![CICD](https://img.shields.io/badge/CI/CD-D24939?style=flat-square&logo=jenkins&logoColor=white) **CI/CD** | `▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▱▱▱` | **85%** | ⭐⭐⭐⭐½ |
+| ![K8s](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) **Kubernetes** | `▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▱▱▱▱` | **78%** | ⭐⭐⭐⭐ |
+| ![TF](https://img.shields.io/badge/Terraform-5835CC?style=flat-square&logo=terraform&logoColor=white) **Terraform** | `▓▓▓▓▓▓▓▓▓▓▓▓▓▓▱▱▱▱▱▱` | **72%** | ⭐⭐⭐½ |
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ AWS ARCHITECTURE ░░░░░░░░░ -->
+## ☁️ `[ AWS CLOUD ARCHITECTURE — Production ]`
+
+<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════════════════════╗
+║             🌐  ROHIT BHUSARE — AWS PRODUCTION ARCHITECTURE                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║    👥 USERS ──────────────────────────────────────────────────────────────  ║
+║         │                     │                       │                      ║
+║    [Web Browser]          [Mobile App]            [API Client]               ║
+║         │                     │                       │                      ║
+║         └──────────────────┬──┘───────────────────────┘                     ║
+║                             ▼                                                ║
+║    ┌────────────────────────────────────────────────────────────────────┐   ║
+║    │   🌍  Route 53  ──  DNS Routing  ──  Health Checks                 │   ║
+║    └─────────────────────────────┬──────────────────────────────────────┘   ║
+║                                   ▼                                          ║
+║    ┌────────────────────────────────────────────────────────────────────┐   ║
+║    │   🛡️  CloudFront CDN  +  AWS WAF  +  Shield Standard              │   ║
+║    └─────────────────────────────┬──────────────────────────────────────┘   ║
+║                                   ▼                                          ║
+║    ┌────────────────────────────────────────────────────────────────────┐   ║
+║    │          ⚖️  Application Load Balancer  (Multi-AZ)                 │   ║
+║    └──────────────────┬──────────────────────┬─────────────────────────┘   ║
+║                        │                      │                              ║
+║    ┌───────────────────▼──────┐  ┌────────────▼────────────────────────┐   ║
+║    │   ☸️  EKS CLUSTER         │  │   🖥️  EC2 AUTO SCALING GROUP         │   ║
+║    │  ┌────────────────────┐  │  │  ┌──────────────────────────────┐  │   ║
+║    │  │ Node  Node  Node   │  │  │  │  Instance  Instance  Spot    │  │   ║
+║    │  │ ┌──┐  ┌──┐  ┌──┐  │  │  │  │  Min: 2    Max: 10   Inst.  │  │   ║
+║    │  │ │P1│  │P2│  │P3│  │  │  │  └──────────────────────────────┘  │   ║
+║    │  │ └──┘  └──┘  └──┘  │  │  └────────────────────────────────────┘   ║
+║    │  └────────────────────┘  │                                            ║
+║    └──────────────────────────┘                                             ║
+║                                                                              ║
+║    ╔═══════════════════════════════════════════════════════════════════╗    ║
+║    ║                  🔒  PRIVATE VPC  (Multi-AZ)                     ║    ║
+║    ║  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────────┐ ║    ║
+║    ║  │🗄️ Aurora  │  │⚡ Redis  │  │📦  S3    │  │🔑 IAM + KMS     │ ║    ║
+║    ║  │  RDS DB  │  │ElastiCch │  │ Buckets  │  │  Secrets Mgr    │ ║    ║
+║    ║  └──────────┘  └──────────┘  └──────────┘  └──────────────────┘ ║    ║
+║    ╚═══════════════════════════════════════════════════════════════════╝    ║
+║                                                                              ║
+║    📊 OBSERVABILITY ──── CloudWatch ── Prometheus ── Grafana ── ELK         ║
+║    🔁 CI/CD ────────────── Git Push → Jenkins → ECR → EKS Deploy ✅         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ TOP 10 PROJECTS ░░░░░░░░░ -->
+## 🚀 `[ TOP 10 DEVOPS PROJECTS ]`
+
+<div align="center">
+
+| # | 🚀 Project | 📋 Description | 🛠️ Stack | Status |
+|:--:|:-----------|:---------------|:---------|:------:|
+| 🥇 | **[AWS Infrastructure Automation](https://github.com/rbhusare829)** | Modular Terraform for full AWS env — VPC, EC2, RDS, S3, ALB, IAM | `Terraform` `AWS` `S3 Backend` | ![](https://img.shields.io/badge/LIVE-00ff88?style=flat-square) |
+| 🥈 | **[Jenkins CI/CD Mega Pipeline](https://github.com/rbhusare829)** | Code→SAST→Build→Scan→ECR→EKS multi-stage declarative pipeline | `Jenkins` `Docker` `SonarQube` `Trivy` | ![](https://img.shields.io/badge/LIVE-00ff88?style=flat-square) |
+| 🥉 | **[Kubernetes Microservices](https://github.com/rbhusare829)** | EKS prod cluster — HPA, VPA, RBAC, Ingress, Helm, Network Policy | `EKS` `Helm` `K8s` `ArgoCD` | ![](https://img.shields.io/badge/LIVE-00ff88?style=flat-square) |
+| 4️⃣ | **[Dockerized App Deployment](https://github.com/rbhusare829)** | Multi-container app — Docker Compose, Nginx SSL, Redis cache | `Docker` `Nginx` `Redis` `Node.js` | ![](https://img.shields.io/badge/LIVE-00ff88?style=flat-square) |
+| 5️⃣ | **[GitHub Actions CI/CD](https://github.com/rbhusare829)** | Automated workflows — build, test, security, ECR push, EKS deploy | `GitHub Actions` `ECR` `EKS` | ![](https://img.shields.io/badge/ACTIVE-00fff2?style=flat-square) |
+| 6️⃣ | **[Prometheus + Grafana Stack](https://github.com/rbhusare829)** | Full K8s observability — Alertmanager, PagerDuty, custom dashboards | `Prometheus` `Grafana` `Helm` | ![](https://img.shields.io/badge/ACTIVE-00fff2?style=flat-square) |
+| 7️⃣ | **[ELK Logging Platform](https://github.com/rbhusare829)** | Centralized logging — Elasticsearch, Logstash, Kibana, Filebeat | `ELK` `Filebeat` `Docker` | ![](https://img.shields.io/badge/ACTIVE-00fff2?style=flat-square) |
+| 8️⃣ | **[Nginx Reverse Proxy Infra](https://github.com/rbhusare829)** | High-perf Nginx — SSL/TLS, load balancing, rate limiting, WAF | `Nginx` `Ansible` `Certbot` | ![](https://img.shields.io/badge/ACTIVE-00fff2?style=flat-square) |
+| 9️⃣ | **[Auto Scaling Architecture](https://github.com/rbhusare829)** | AWS ASG with custom CloudWatch metrics + Spot instance optimization | `AWS ASG` `CloudWatch` `Terraform` | ![](https://img.shields.io/badge/ACTIVE-00fff2?style=flat-square) |
+| 🔟 | **[End-to-End DevOps Platform](https://github.com/rbhusare829)** | Complete GitOps ecosystem — Git→Jenkins→ECR→EKS→Monitor→Alert | `Full DevOps` `GitOps` `AWS` | ![](https://img.shields.io/badge/🏆%20FLAGSHIP-ff00c8?style=flat-square) |
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ GITHUB STATS ░░░░░░░░░ -->
+## 📊 `[ GITHUB ANALYTICS — Live Dashboard ]`
+
+<div align="center">
+
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=rbhusare829&show_icons=true&theme=chartreuse-dark&title_color=00fff2&icon_color=ff00c8&text_color=ffffff&bg_color=050505&border_color=00fff2&border_radius=16&include_all_commits=true&count_private=true&rank_icon=github" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=rbhusare829&theme=dark&background=050505&ring=00fff2&fire=ff00c8&currStreakLabel=00fff2&sideLabels=ffffff&currStreakNum=ff00c8&sideNums=00fff2&dates=888888&border=00fff2&border_radius=16" />
+
+<br/><br/>
+
+<img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rbhusare829&layout=donut-vertical&theme=chartreuse-dark&title_color=00fff2&text_color=ffffff&bg_color=050505&border_color=00fff2&border_radius=16&langs_count=8&hide=html,css,scss" />
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ TROPHIES ░░░░░░░░░ -->
+## 🏆 `[ GITHUB TROPHIES ]`
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=rbhusare829&theme=matrix&no-frame=true&no-bg=false&margin-w=10&column=7)](https://github.com/rbhusare829)
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ ACTIVITY GRAPH ░░░░░░░░░ -->
+## 📈 `[ CONTRIBUTION ACTIVITY GRAPH ]`
+
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=rbhusare829&bg_color=050505&color=00fff2&line=7b2fff&point=ff00c8&area=true&area_color=00fff215&hide_border=false&border_color=00fff2&radius=16&custom_title=Rohit%20Bhusare%20|%20DevOps%20Contribution%20Graph)](https://github.com/rbhusare829)
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ SNAKE ░░░░░░░░░ -->
+## 🐍 `[ CONTRIBUTION SNAKE ]`
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rbhusare829/rbhusare829/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rbhusare829/rbhusare829/output/github-contribution-grid-snake.svg"/>
+  <img alt="snake animation" src="https://raw.githubusercontent.com/rbhusare829/rbhusare829/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+</picture>
+
+</div>
+
+> **⚙️ Snake Setup** → Create `.github/workflows/snake.yml` with Platane/snk@v3 action → Enable GitHub Actions → Snake generates daily automatically!
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ CERTIFICATIONS ░░░░░░░░░ -->
+## 🎓 `[ CERTIFICATIONS ]`
+
+<div align="center">
+
+| 🏅 Certification | 🏢 Authority | 📊 Status |
+|:----------------|:------------|:--------:|
+| ☁️ AWS Certified Solutions Architect – Associate | Amazon Web Services | ![](https://img.shields.io/badge/✅%20CERTIFIED-FF9900?style=flat-square&logo=amazon-aws) |
+| ☁️ AWS Certified DevOps Engineer – Professional | Amazon Web Services | ![](https://img.shields.io/badge/✅%20CERTIFIED-FF9900?style=flat-square&logo=amazon-aws) |
+| 🏗️ HashiCorp Terraform Associate | HashiCorp | ![](https://img.shields.io/badge/✅%20CERTIFIED-7b2fff?style=flat-square&logo=terraform) |
+| ☸️ Certified Kubernetes Admin (CKA) | CNCF | ![](https://img.shields.io/badge/🔄%20IN%20PROGRESS-00fff2?style=flat-square&logo=kubernetes&logoColor=black) |
+| 🛡️ AWS Security Specialty | Amazon Web Services | ![](https://img.shields.io/badge/🔄%20IN%20PROGRESS-00fff2?style=flat-square&logo=amazon-aws&logoColor=black) |
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ CONNECT ░░░░░░░░░ -->
+## 🌐 `[ CONNECT — Let's Build ]`
+
+<div align="center">
+
+<a href="https://linkedin.com/in/rohit-bhusare">
+<img src="https://img.shields.io/badge/◈%20LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=050505" height="46"/></a>&nbsp;
+<a href="mailto:rbhusare829@gmail.com">
+<img src="https://img.shields.io/badge/◈%20GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=050505" height="46"/></a>&nbsp;
+<a href="https://github.com/rbhusare829">
+<img src="https://img.shields.io/badge/◈%20GITHUB-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=050505" height="46"/></a>&nbsp;
+<a href="https://rbhusare829.github.io">
+<img src="https://img.shields.io/badge/◈%20PORTFOLIO-00fff2?style=for-the-badge&logo=vercel&logoColor=black&labelColor=050505" height="46"/></a>&nbsp;
+<a href="https://dev.to/rbhusare829">
+<img src="https://img.shields.io/badge/◈%20DEV.TO-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=00fff2&labelColor=050505" height="46"/></a>
+
+<br/><br/>
+
+```bash
+┌──────────────────────────────────────────────────────────────────────┐
+│  rbhusare829@devops-city:~$ ping rohit-bhusare                        │
+│  > PONG ⚡ — Response time: < 24 hours guaranteed                    │
+│                                                                        │
+│  rbhusare829@devops-city:~$ cat availability.txt                       │
+│  > ✅ Open To  : DevOps Consulting | Cloud Projects | Open Source    │
+│  > ✅ Available: Freelance | Full-time | Contract                    │
+│  > ✅ Timezone : IST (UTC +5:30) | Maharashtra, India 🇮🇳            │
+│  > ✅ Response : rbhusare829@gmail.com                               │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+<br/>
+
+---
+
+<!-- ░░░░░░░░░ FOOTER ░░░░░░░░░ -->
+
+<div align="center">
+
+<img src="https://i.imgur.com/dBaSKWF.gif" height="30" width="100%">
+
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=14&duration=3000&pause=1000&color=00FFF2&background=00000000&center=true&vCenter=true&width=800&height=35&lines=⚡+SYSTEM+STATUS%3A+🟢+ONLINE+|+UPTIME%3A+99.99%25+|+ALL+SYSTEMS+OPERATIONAL+✅)](https://git.io/typing-svg)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,25:00fff2,50:7b2fff,75:ff00c8,100:050505&height=160&section=footer&text=⚡+Automate+Everything.+Break+Nothing.+Ship+Fast.+⚡&fontSize=17&fontColor=ffffff&animation=twinkling&fontAlignY=68" width="100%"/>
+
+</div>
+
+<!-- ============================================================ -->
+<!--   rbhusare829 — Senior DevOps Engineer | India 🇮🇳          -->
+<!--   Built with ⚡ passion for automation & cloud engineering   -->
+<!-- ============================================================ -->
