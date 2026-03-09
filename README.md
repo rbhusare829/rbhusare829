@@ -12,7 +12,12 @@
 
 <!-- MATRIX RAIN EFFECT (GIF simulation) -->
 <div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=900&size=13&duration=50&pause=5000&color=00FFF2&background=00000000&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=30&lines=01001001+01001110+01000110+01010010+01000001+01010011+01010100+01010010+01010101+01000011+01010100+01010101+01010010+01000101" alt="matrix"/>
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=900&size=13&duration=50&pause=5000&color=00FFF2&background=00000000&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=30&lines=01000100+01100101+01110110+01001111+01110000+01110011+00100000+01000101+01101110+01100111+01101001+01101110+01100101+01100101+01110010" alt="matrix"/>
+</div>
+
+<!-- PROFILE VIEWS COUNTER -->
+<div align="center">
+<img src="https://count.getloli.com/get/@rbhusare829?theme=rule34" alt="profile views" />
 </div>
 
 <!-- MAIN TYPING TITLE -->
@@ -40,7 +45,8 @@
 [![Visitors](https://komarev.com/ghpvc/?username=rbhusare829&label=◈%20VISITORS&color=00fff2&style=for-the-badge&abbreviated=true)](https://github.com/rbhusare829)&nbsp;
 [![Followers](https://img.shields.io/github/followers/rbhusare829?label=◈%20FOLLOWERS&style=for-the-badge&color=7b2fff&labelColor=050505)](https://github.com/rbhusare829?tab=followers)&nbsp;
 [![Stars](https://img.shields.io/github/stars/rbhusare829?label=◈%20TOTAL%20STARS&style=for-the-badge&color=ff00c8&labelColor=050505)](https://github.com/rbhusare829)&nbsp;
-![Location](https://img.shields.io/badge/◈%20INDIA-Maharashtra-00fff2?style=for-the-badge&labelColor=050505)
+![Location](https://img.shields.io/badge/◈%20INDIA-Maharashtra-00fff2?style=for-the-badge&labelColor=050505)&nbsp;
+[![Repos](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/rbhusare829&query=$.public_repos&label=◈%20REPOS&style=for-the-badge&color=7b2fff&labelColor=050505)](https://github.com/rbhusare829?tab=repositories)
 
 </div>
 
@@ -123,11 +129,16 @@
 │    "languages"    :  [ "Python 🐍", "Bash ⚙️", "YAML", "HCL", "Node.js" ], │
 │    "os"           :  "Linux — Ubuntu · CentOS · Amazon Linux",              │
 │    "philosophy"   :  "⚡ Automate Everything. Break Nothing. Ship Fast.",   │
-│    "status"       :  "🟢 ONLINE — Open to Consulting & Collaborations"      │
+│    "status"       :  "🟢 ONLINE — Open to Consulting & Collaborations",     │
+│    "experience"   :  "3+ Years in Production DevOps & Cloud Infrastructure", │
+│    "specialties"  :  [ "AWS", "K8s", "CI/CD", "IaC", "Monitoring" ]        │
 │  }                                                                           │
 │                                                                              │
 │  rbhusare829@devops-city:~$ echo $UPTIME                                     │
 │  > 99.99% — Zero downtime deployments only 🚀                               │
+│                                                                              │
+│  rbhusare829@devops-city:~$ docker ps | grep productivity                    │
+│  > CONTAINER: innovation-engine    STATUS: Up 24/7    HEALTH: ✅            │
 │                                                                              │
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -145,23 +156,23 @@
 
 **`━━━━━━━━━━━━━━━━━━━ ☁️  CLOUD ━━━━━━━━━━━━━━━━━━━`**
 
-<img src="https://skillicons.dev/icons?i=aws,gcp,azure&theme=dark&perline=3" height="65"/>
+<img src="https://skillicons.dev/icons?i=aws,gcp,azure,cloudflare&theme=dark&perline=4" height="65"/>
 
 **`━━━━━━━━━━━━━━━━━ 🐳  CONTAINERS ━━━━━━━━━━━━━━━━━`**
 
-<img src="https://skillicons.dev/icons?i=docker,kubernetes,helm&theme=dark&perline=3" height="65"/>
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,helm,rancher&theme=dark&perline=4" height="65"/>
 
 **`━━━━━━━━━━━━━━━━━━━ ⚙️  IaC ━━━━━━━━━━━━━━━━━━━━━`**
 
-<img src="https://skillicons.dev/icons?i=terraform,ansible,bash&theme=dark&perline=3" height="65"/>
+<img src="https://skillicons.dev/icons?i=terraform,ansible,bash,powershell&theme=dark&perline=4" height="65"/>
 
 **`━━━━━━━━━━━━━━━━━━ 🔁  CI/CD ━━━━━━━━━━━━━━━━━━━━`**
 
-<img src="https://skillicons.dev/icons?i=jenkins,githubactions,gitlab&theme=dark&perline=3" height="65"/>
+<img src="https://skillicons.dev/icons?i=jenkins,githubactions,gitlab,circleci&theme=dark&perline=4" height="65"/>
 
 **`━━━━━━━━━━━━━━━━━ 💻  LANGUAGES ━━━━━━━━━━━━━━━━━`**
 
-<img src="https://skillicons.dev/icons?i=python,nodejs,linux&theme=dark&perline=3" height="65"/>
+<img src="https://skillicons.dev/icons?i=python,nodejs,go,linux&theme=dark&perline=4" height="65"/>
 
 **`━━━━━━━━━━━━━━━━━ 📊  MONITORING ━━━━━━━━━━━━━━━━`**
 
@@ -169,7 +180,7 @@
 
 **`━━━━━━━━━━━━━━━━━ 🔧  VCS & WEB ━━━━━━━━━━━━━━━━━`**
 
-<img src="https://skillicons.dev/icons?i=git,github,nginx&theme=dark&perline=3" height="65"/>
+<img src="https://skillicons.dev/icons?i=git,github,nginx,redis,postgres,mongodb&theme=dark&perline=6" height="65"/>
 
 </div>
 
@@ -274,6 +285,32 @@
 ---
 
 <!-- ░░░░░░░░░ TOP 10 PROJECTS ░░░░░░░░░ -->
+<!-- ░░░░░░░░░ DEVOPS WORKFLOW ░░░░░░░░░ -->
+## 🔄 `[ DEVOPS WORKFLOW — End-to-End Pipeline ]`
+
+<div align="center">
+
+```mermaid
+graph LR
+    A[💻 Developer] -->|git push| B[📦 GitHub]
+    B -->|webhook| C[🔨 Jenkins]
+    C -->|build| D[🐳 Docker]
+    D -->|scan| E[🛡️ Trivy]
+    E -->|push| F[📦 ECR]
+    F -->|deploy| G[☸️ EKS]
+    G -->|expose| H[⚖️ ALB]
+    H -->|serve| I[🌐 Users]
+    G -->|monitor| J[📊 Prometheus]
+    J -->|visualize| K[📈 Grafana]
+    K -->|alert| L[🚨 PagerDuty]
+```
+
+</div>
+
+<br/>
+
+---
+
 ## 🚀 `[ TOP 10 DEVOPS PROJECTS ]`
 
 <div align="center">
@@ -308,6 +345,10 @@
 <br/><br/>
 
 <img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rbhusare829&layout=donut-vertical&theme=chartreuse-dark&title_color=00fff2&text_color=ffffff&bg_color=050505&border_color=00fff2&border_radius=16&langs_count=8&hide=html,css,scss" />
+
+<br/><br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rbhusare829&theme=radical" width="98%" />
 
 </div>
 
@@ -361,6 +402,33 @@
 ---
 
 <!-- ░░░░░░░░░ CERTIFICATIONS ░░░░░░░░░ -->
+<!-- ░░░░░░░░░ ACHIEVEMENTS ░░░░░░░░░ -->
+## 🏅 `[ ACHIEVEMENTS & MILESTONES ]`
+
+<div align="center">
+
+```
+╔════════════════════════════════════════════════════════════════════════╗
+║                                                                        ║
+║  🎯 CAREER HIGHLIGHTS                                                  ║
+║  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ║
+║                                                                        ║
+║  ✅ Reduced deployment time by 70% using CI/CD automation             ║
+║  ✅ Managed 50+ microservices on Kubernetes in production             ║
+║  ✅ Achieved 99.9% uptime for critical production workloads           ║
+║  ✅ Automated infrastructure provisioning saving 100+ hours/month     ║
+║  ✅ Implemented GitOps reducing configuration drift by 95%            ║
+║  ✅ Built observability stack monitoring 200+ servers                 ║
+║                                                                        ║
+╚════════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+<br/>
+
+---
+
 ## 🎓 `[ CERTIFICATIONS ]`
 
 <div align="center">
@@ -380,6 +448,27 @@
 ---
 
 <!-- ░░░░░░░░░ CONNECT ░░░░░░░░░ -->
+<!-- ░░░░░░░░░ BLOG & CONTENT ░░░░░░░░░ -->
+## 📝 `[ LATEST BLOG POSTS ]`
+
+<div align="center">
+
+<!-- BLOG-POST-LIST:START -->
+- 🚀 **Building Production-Ready EKS Clusters** — Best practices for AWS EKS
+- 🐳 **Docker Multi-Stage Builds** — Optimizing container images for production
+- ⚡ **GitOps with ArgoCD** — Automated Kubernetes deployments
+- 🔒 **DevSecOps Pipeline** — Integrating security into CI/CD
+- 📊 **Observability Stack** — Prometheus + Grafana + Loki setup
+<!-- BLOG-POST-LIST:END -->
+
+[![Blog](https://img.shields.io/badge/📖%20Read%20More%20Articles-00fff2?style=for-the-badge&logo=hashnode&logoColor=black)](https://dev.to/rbhusare829)
+
+</div>
+
+<br/>
+
+---
+
 ## 🌐 `[ CONNECT — Let's Build ]`
 
 <div align="center">
@@ -407,8 +496,32 @@
 │  > ✅ Available: Freelance | Full-time | Contract                    │
 │  > ✅ Timezone : IST (UTC +5:30) | Maharashtra, India 🇮🇳            │
 │  > ✅ Response : rbhusare829@gmail.com                               │
+│                                                                        │
+│  rbhusare829@devops-city:~$ curl -X GET /api/skills                   │
+│  > {"aws": "expert", "kubernetes": "advanced", "terraform": "pro"}  │
+│                                                                        │
+│  rbhusare829@devops-city:~$ systemctl status collaboration.service    │
+│  > ● collaboration.service - Always Ready to Collaborate              │
+│  >   Active: active (running) since 2021                             │
+│  >   Status: "Let's build something amazing together! 🚀"            │
 └──────────────────────────────────────────────────────────────────────┘
 ```
+
+<br/>
+
+**💡 Quick Stats:**
+
+<div align="center">
+
+| 📊 Metric | 📈 Value |
+|:----------|:--------:|
+| ⚡ Response Time | < 24 hours |
+| 🌍 Availability | Global Remote |
+| 💼 Project Types | Cloud, DevOps, IaC |
+| 🎯 Success Rate | 99.9% |
+| ⭐ Client Satisfaction | 5/5 |
+
+</div>
 
 </div>
 
