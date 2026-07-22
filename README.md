@@ -1,7 +1,7 @@
 <!-- 🎨 CUSTOM HAND-CODED ANIMATED RETROWAVE HERO BANNER -->
 <div align="center">
 
-<img src="./assets/hero-banner.svg" width="100%" alt="Rohit Bhusare — DevOps Engineer"/>
+<img src="https://raw.githubusercontent.com/rbhusare829/rbhusare829/main/assets/hero-banner.svg?v=6.0" width="100%" alt="Rohit Bhusare — DevOps Engineer"/>
 
 </div>
 
