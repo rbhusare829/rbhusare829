@@ -55,13 +55,42 @@ status     : Open to Work
 
 <div align="center">
 
-<!-- Core icons row 1 -->
-<img src="https://skillicons.dev/icons?i=aws,terraform,docker,kubernetes,jenkins,ansible,linux,bash,python,git&theme=dark&perline=10"/>
+<!-- 🔥 ROW 1 — Spinning 3D Animated Icons (techstack-generator) -->
+<img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" title="AWS"/>
+<img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" title="Docker"/>
+<img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="65" height="65" title="Kubernetes"/>
+<img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" title="Python"/>
+<img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" title="GitHub"/>
+<img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65" title="MySQL"/>
+<img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="NGINX" width="65" height="65" title="NGINX"/>
+<img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65" title="Java"/>
 
 <br/><br/>
 
-<!-- Core icons row 2 -->
-<img src="https://skillicons.dev/icons?i=githubactions,nginx,mysql,ubuntu,vim&theme=dark&perline=10"/>
+<!-- 🌊 ROW 2 — Animated Skill Icons with glow effect -->
+<img src="https://skillicons.dev/icons?i=terraform,ansible,jenkins,githubactions,git,linux,bash,vim&theme=dark&perline=8"/>
+
+<br/><br/>
+
+<!-- 🌊 ROW 3 — Monitoring + DB + Web stack -->
+<img src="https://skillicons.dev/icons?i=aws,nginx,mysql,ubuntu,python,bash,git,github&theme=dark&perline=8"/>
+
+</div>
+
+<br/>
+
+<!-- 🎬 ANIMATED MARQUEE-STYLE BADGE ROW -->
+<div align="center">
+
+![AWS](https://img.shields.io/badge/AWS-%E2%98%81%EF%B8%8F_Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white&labelColor=1a0b2e)
+![Terraform](https://img.shields.io/badge/Terraform-%F0%9F%8F%97%EF%B8%8F_IaC-7B42BC?style=for-the-badge&logo=terraform&logoColor=white&labelColor=1a0b2e)
+![Docker](https://img.shields.io/badge/Docker-%F0%9F%90%B3_Container-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=1a0b2e)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-%E2%98%B8%EF%B8%8F_Orchestrate-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=1a0b2e)
+
+![Jenkins](https://img.shields.io/badge/Jenkins-%F0%9F%94%81_CI%2FCD-D24939?style=for-the-badge&logo=jenkins&logoColor=white&labelColor=1a0b2e)
+![Ansible](https://img.shields.io/badge/Ansible-%F0%9F%93%A6_Automate-EE0000?style=for-the-badge&logo=ansible&logoColor=white&labelColor=1a0b2e)
+![Linux](https://img.shields.io/badge/Linux-%F0%9F%90%A7_OS-FCC624?style=for-the-badge&logo=linux&logoColor=black&labelColor=1a0b2e)
+![Python](https://img.shields.io/badge/Python-%F0%9F%90%8D_Scripting-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=1a0b2e)
 
 </div>
 
