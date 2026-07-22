@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Audiowide&amp;family=Fira+Code:wght@600;700&amp;family=Orbitron:wght@700&amp;display=swap');
+
+      .pipe-bg { fill: #0a051b; stroke: #1f113a; stroke-width: 2; }
+      
+      /* Track Lines */
+      .track-back {
+        stroke: #1a0f35;
+        stroke-width: 6;
+      }
+      .track-active {
+        stroke: #2e175b;
+        stroke-width: 4;
+      }
+
+      /* Glows */
+      .glow-pink { filter: drop-shadow(0px 0px 8px #ff2975); }
+      .glow-cyan { filter: drop-shadow(0px 0px 8px #00f3ff); }
+      .glow-gold { filter: drop-shadow(0px 0px 8px #f9c80e); }
+      .glow-purple { filter: drop-shadow(0px 0px 8px #a855f7); }
+      .glow-green { filter: drop-shadow(0px 0px 8px #10b981); }
+
+      /* Node Labels */
+      .node-title {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        fill: #ffffff;
+        letter-spacing: 1px;
+      }
+      
+      .node-subtitle {
+        font-family: 'Fira Code', monospace;
+        font-size: 10px;
+        fill: #00f3ff;
+      }
+
+      .status-pass {
+        font-family: 'Fira Code', monospace;
+        font-size: 9px;
+        fill: #10b981;
+        font-weight: bold;
+      }
+
+      .header-title {
+        font-family: 'Audiowide', sans-serif;
+        font-size: 15px;
+        fill: #ff2975;
+        letter-spacing: 2px;
+      }
+
+      /* Animated Packets */
+      .packet-cyan {
+        animation: flowPacket 3.6s linear infinite;
+        fill: #00f3ff;
+        filter: drop-shadow(0px 0px 6px #00f3ff);
+      }
+
+      .packet-pink {
+        animation: flowPacket 3.6s linear infinite;
+        animation-delay: 1.2s;
+        fill: #ff2975;
+        filter: drop-shadow(0px 0px 6px #ff2975);
+      }
+
+      .packet-gold {
+        animation: flowPacket 3.6s linear infinite;
+        animation-delay: 2.4s;
+        fill: #f9c80e;
+        filter: drop-shadow(0px 0px 6px #f9c80e);
+      }
+
+      @keyframes flowPacket {
+        0% { transform: translateX(0px); opacity: 0; }
+        5% { opacity: 1; }
+        95% { opacity: 1; }
+        100% { transform: translateX(800px); opacity: 0; }
+      }
+
+      /* Pulsing Node Rings */
+      .pulse-ring {
+        animation: ringPulse 2s ease-out infinite;
+        transform-origin: center;
+      }
+
+      @keyframes ringPulse {
+        0% { r: 24px; opacity: 0.8; stroke-width: 2px; }
+        100% { r: 36px; opacity: 0; stroke-width: 0px; }
+      }
+    </style>
+
+    <!-- Node Gradients -->
+    <linearGradient id="gitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f05032" />
+      <stop offset="100%" stop-color="#8c2310" />
+    </linearGradient>
+
+    <linearGradient id="dockerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2496ed" />
+      <stop offset="100%" stop-color="#0d5289" />
+    </linearGradient>
+
+    <linearGradient id="testGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9c80e" />
+      <stop offset="100%" stop-color="#9e7b00" />
+    </linearGradient>
+
+    <linearGradient id="tfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a2be2" />
+      <stop offset="100%" stop-color="#4a1182" />
+    </linearGradient>
+
+    <linearGradient id="k8sGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2975" />
+      <stop offset="100%" stop-color="#940b3c" />
+    </linearGradient>
+
+    <linearGradient id="monGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff" />
+      <stop offset="100%" stop-color="#007780" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="1000" height="240" rx="16" class="pipe-bg" />
+
+  <!-- Header & Live Status Bar -->
+  <g transform="translate(30, 32)">
+    <!-- Header Text -->
+    <text x="0" y="0" class="header-title glow-pink">⚡ LIVE CI/CD PIPELINE AUTOMATION</text>
+    
+    <!-- Status Badge -->
+    <g transform="translate(760, -14)">
+      <rect x="0" y="0" width="180" height="26" rx="13" fill="#0d2419" stroke="#10b981" stroke-width="1.2" class="glow-green" />
+      <circle cx="16" cy="13" r="5" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite" />
+      </circle>
+      <text x="30" y="17" class="status-pass" font-size="11">PIPELINE: HEALTHY</text>
+    </g>
+  </g>
+
+  <!-- Pipeline Main Track Line -->
+  <g transform="translate(100, 125)">
+    <!-- Background Track -->
+    <line x1="0" y1="0" x2="800" y2="0" class="track-back" />
+    <!-- Glowing Core Track -->
+    <line x1="0" y1="0" x2="800" y2="0" class="track-active glow-pink" />
+
+    <!-- Animated Data Packets (Moving along line) -->
+    <g transform="translate(0, 0)">
+      <circle cx="0" cy="0" r="6" class="packet-cyan" />
+      <circle cx="0" cy="0" r="4" fill="#ffffff" class="packet-cyan" />
+    </g>
+    <g transform="translate(0, 0)">
+      <circle cx="0" cy="0" r="6" class="packet-pink" />
+      <circle cx="0" cy="0" r="4" fill="#ffffff" class="packet-pink" />
+    </g>
+    <g transform="translate(0, 0)">
+      <circle cx="0" cy="0" r="6" class="packet-gold" />
+      <circle cx="0" cy="0" r="4" fill="#ffffff" class="packet-gold" />
+    </g>
+  </g>
+
+  <!-- PIPELINE STAGES / NODES -->
+  <g transform="translate(100, 125)">
+    
+    <!-- STAGE 1: GIT COMMIT -->
+    <g transform="translate(0, 0)">
+      <circle cx="0" cy="0" r="28" stroke="#f05032" stroke-width="2" fill="none" class="pulse-ring" />
+      <circle cx="0" cy="0" r="24" fill="url(#gitGrad)" stroke="#ffffff" stroke-width="1.5" class="glow-pink" />
+      <!-- Git Icon Symbol -->
+      <path d="M -6 -4 L 0 2 L 0 -10 M 0 2 L 6 -4 M 0 2 L 0 8" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="0" cy="-10" r="2.5" fill="#ffffff" />
+      <circle cx="-6" cy="-4" r="2.5" fill="#ffffff" />
+      <circle cx="6" cy="-4" r="2.5" fill="#ffffff" />
+      <circle cx="0" cy="8" r="2.5" fill="#ffffff" />
+      
+      <!-- Node Text -->
+      <text x="0" y="44" text-anchor="middle" class="node-title">1. SOURCE</text>
+      <text x="0" y="58" text-anchor="middle" class="node-subtitle">GitHub Push</text>
+      <text x="0" y="72" text-anchor="middle" class="status-pass">✓ TRIGGER</text>
+    </g>
+
+    <!-- STAGE 2: DOCKER BUILD -->
+    <g transform="translate(160, 0)">
+      <circle cx="0" cy="0" r="24" fill="url(#dockerGrad)" stroke="#00f3ff" stroke-width="1.5" class="glow-cyan" />
+      <!-- Docker Whale Icon -->
+      <text x="0" y="6" text-anchor="middle" font-size="20">🐳</text>
+      
+      <!-- Node Text -->
+      <text x="0" y="44" text-anchor="middle" class="node-title">2. BUILD</text>
+      <text x="0" y="58" text-anchor="middle" class="node-subtitle">Docker Image</text>
+      <text x="0" y="72" text-anchor="middle" class="status-pass">✓ PASS</text>
+    </g>
+
+    <!-- STAGE 3: TEST & SCAN -->
+    <g transform="translate(320, 0)">
+      <circle cx="0" cy="0" r="24" fill="url(#testGrad)" stroke="#ffe600" stroke-width="1.5" class="glow-gold" />
+      <!-- Shield / Test Icon -->
+      <text x="0" y="6" text-anchor="middle" font-size="18">🛡️</text>
+      
+      <!-- Node Text -->
+      <text x="0" y="44" text-anchor="middle" class="node-title">3. TEST</text>
+      <text x="0" y="58" text-anchor="middle" class="node-subtitle">Sec &amp; Sonar</text>
+      <text x="0" y="72" text-anchor="middle" class="status-pass">✓ 100% OK</text>
+    </g>
+
+    <!-- STAGE 4: TERRAFORM IAC -->
+    <g transform="translate(480, 0)">
+      <circle cx="0" cy="0" r="24" fill="url(#tfGrad)" stroke="#a855f7" stroke-width="1.5" class="glow-purple" />
+      <!-- IaC Cube Icon -->
+      <text x="0" y="6" text-anchor="middle" font-size="18">🏗️</text>
+      
+      <!-- Node Text -->
+      <text x="0" y="44" text-anchor="middle" class="node-title">4. IAC</text>
+      <text x="0" y="58" text-anchor="middle" class="node-subtitle">Terraform</text>
+      <text x="0" y="72" text-anchor="middle" class="status-pass">✓ APPLIED</text>
+    </g>
+
+    <!-- STAGE 5: KUBERNETES DEPLOY -->
+    <g transform="translate(640, 0)">
+      <circle cx="0" cy="0" r="28" stroke="#ff2975" stroke-width="2" fill="none" class="pulse-ring" style="animation-delay: 1s;" />
+      <circle cx="0" cy="0" r="24" fill="url(#k8sGrad)" stroke="#ff2975" stroke-width="1.5" class="glow-pink" />
+      <!-- K8s Ship Wheel Icon -->
+      <text x="0" y="6" text-anchor="middle" font-size="18">☸️</text>
+      
+      <!-- Node Text -->
+      <text x="0" y="44" text-anchor="middle" class="node-title">5. DEPLOY</text>
+      <text x="0" y="58" text-anchor="middle" class="node-subtitle">K8s &amp; AWS</text>
+      <text x="0" y="72" text-anchor="middle" class="status-pass">✓ ZERO DOWN</text>
+    </g>
+
+    <!-- STAGE 6: CLOUDWATCH MONITOR -->
+    <g transform="translate(800, 0)">
+      <circle cx="0" cy="0" r="24" fill="url(#monGrad)" stroke="#00f3ff" stroke-width="1.5" class="glow-cyan" />
+      <!-- Chart / Monitor Icon -->
+      <text x="0" y="6" text-anchor="middle" font-size="18">📊</text>
+      
+      <!-- Node Text -->
+      <text x="0" y="44" text-anchor="middle" class="node-title">6. MONITOR</text>
+      <text x="0" y="58" text-anchor="middle" class="node-subtitle">CloudWatch</text>
+      <text x="0" y="72" text-anchor="middle" class="status-pass">✓ LIVE 99.99%</text>
+    </g>
+  </g>
+
+  <!-- Bottom Terminal Decorative Log -->
+  <g transform="translate(100, 218)">
+    <text x="400" y="0" text-anchor="middle" font-family="Fira Code" font-size="10" fill="#6b7280">
+      [LOG]: <tspan fill="#10b981">pipeline_run_success</tspan> | artifact: v6.0.4 | deployment_time: 42s | status: <tspan fill="#00f3ff">ACTIVE</tspan>
+    </text>
+  </g>
+</svg>
