@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;family=Fira+Code:wght@500&amp;display=swap');
+      
+      .bg-3d { fill: #0b0518; }
+      
+      /* Grid lines */
+      .iso-grid { stroke: #231245; stroke-width: 1; }
+      
+      /* Text */
+      .header-3d { font-family: 'Orbitron', sans-serif; font-size: 16px; fill: #ff2975; font-weight: 700; letter-spacing: 2px; }
+      .sub-3d { font-family: 'Fira Code', monospace; font-size: 11px; fill: #00f3ff; }
+      .legend-text { font-family: 'Fira Code', monospace; font-size: 10px; fill: #94a3b8; }
+      
+      /* Bar animations */
+      .bar-3d {
+        transition: transform 0.3s ease;
+      }
+      .bar-3d:hover {
+        filter: drop-shadow(0px 0px 8px #00f3ff);
+      }
+    </style>
+
+    <!-- Bar Gradients (Rainbow Night Theme) -->
+    <linearGradient id="barLow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <linearGradient id="barMed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <linearGradient id="barHigh" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <linearGradient id="barPeak" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff2975" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+
+    <linearGradient id="barSuper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f222ff" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="320" rx="14" class="bg-3d" stroke="#1f113a" stroke-width="2" />
+
+  <!-- Header -->
+  <g transform="translate(30, 36)">
+    <text x="0" y="0" class="header-3d">🏙️ 3D CONTRIBUTION CITY — ROHIT BHUSARE</text>
+    <text x="0" y="20" class="sub-3d">25+ Projects · Cloud Automation &amp; Infrastructure as Code</text>
+  </g>
+
+  <!-- Isometric Floor Grid & 3D Blocks Base -->
+  <g transform="translate(180, 150)">
+    
+    <!-- Perspective Grid Base Lines -->
+    <g class="iso-grid">
+      <!-- Horizontal perspective lines -->
+      <line x1="-100" y1="60" x2="600" y2="60" />
+      <line x1="-120" y1="90" x2="620" y2="90" />
+      <line x1="-140" y1="120" x2="640" y2="120" />
+    </g>
+
+    <!-- Isometric 3D Columns (Simulating 3D contribution activity bars across months) -->
+
+    <!-- JAN / FEB (Blue/Green Mix) -->
+    <g transform="translate(0, 40)">
+      <!-- Bar 1 -->
+      <path d="M 0 -20 L 14 -27 L 28 -20 L 14 -13 Z" fill="#60a5fa" />
+      <path d="M 0 -20 L 14 -13 L 14 30 L 0 23 Z" fill="#2563eb" />
+      <path d="M 14 -13 L 28 -20 L 28 23 L 14 30 Z" fill="#1d4ed8" />
+    </g>
+    
+    <g transform="translate(30, 30)">
+      <path d="M 0 -40 L 14 -47 L 28 -40 L 14 -33 Z" fill="#34d399" />
+      <path d="M 0 -40 L 14 -33 L 14 30 L 0 23 Z" fill="#10b981" />
+      <path d="M 14 -33 L 28 -40 L 28 23 L 14 30 Z" fill="#059669" />
+    </g>
+
+    <g transform="translate(60, 20)">
+      <path d="M 0 -60 L 14 -67 L 28 -60 L 14 -53 Z" fill="#fbbf24" />
+      <path d="M 0 -60 L 14 -53 L 14 30 L 0 23 Z" fill="#f59e0b" opacity="0.9" />
+      <path d="M 14 -53 L 28 -60 L 28 23 L 14 30 Z" fill="#d97706" opacity="0.9" />
+    </g>
+
+    <!-- MAR / APR (High Peak - Hot Pink) -->
+    <g transform="translate(100, 10)">
+      <path d="M 0 -85 L 14 -92 L 28 -85 L 14 -78 Z" fill="#ff6b9d" />
+      <path d="M 0 -85 L 14 -78 L 14 30 L 0 23 Z" fill="#ff2975" />
+      <path d="M 14 -78 L 28 -85 L 28 23 L 14 30 Z" fill="#e11d48" />
+    </g>
+
+    <g transform="translate(130, 25)">
+      <path d="M 0 -45 L 14 -52 L 28 -45 L 14 -38 Z" fill="#34d399" />
+      <path d="M 0 -45 L 14 -38 L 14 30 L 0 23 Z" fill="#10b981" />
+      <path d="M 14 -38 L 28 -45 L 28 23 L 14 30 Z" fill="#059669" />
+    </g>
+
+    <g transform="translate(160, 15)">
+      <path d="M 0 -70 L 14 -77 L 28 -70 L 14 -63 Z" fill="#f472b6" />
+      <path d="M 0 -70 L 14 -63 L 14 30 L 0 23 Z" fill="#ec4899" />
+      <path d="M 14 -63 L 28 -70 L 28 23 L 14 30 Z" fill="#db2777" />
+    </g>
+
+    <!-- MAY / JUN (Purple / Cyber Peaks) -->
+    <g transform="translate(200, 0)">
+      <path d="M 0 -100 L 14 -107 L 28 -100 L 14 -93 Z" fill="#f222ff" />
+      <path d="M 0 -100 L 14 -93 L 14 30 L 0 23 Z" fill="#d946ef" />
+      <path d="M 14 -93 L 28 -100 L 28 23 L 14 30 Z" fill="#c026d3" />
+    </g>
+
+    <g transform="translate(230, 15)">
+      <path d="M 0 -65 L 14 -72 L 28 -65 L 14 -58 Z" fill="#38bdf8" />
+      <path d="M 0 -65 L 14 -58 L 14 30 L 0 23 Z" fill="#0284c7" />
+      <path d="M 14 -58 L 28 -65 L 28 23 L 14 30 Z" fill="#0369a1" />
+    </g>
+
+    <g transform="translate(260, 30)">
+      <path d="M 0 -35 L 14 -42 L 28 -35 L 14 -28 Z" fill="#34d399" />
+      <path d="M 0 -35 L 14 -28 L 14 30 L 0 23 Z" fill="#10b981" />
+      <path d="M 14 -28 L 28 -35 L 28 23 L 14 30 Z" fill="#059669" />
+    </g>
+
+    <!-- JUL / AUG / SEP (Gold & Green) -->
+    <g transform="translate(300, 5)">
+      <path d="M 0 -90 L 14 -97 L 28 -90 L 14 -83 Z" fill="#ffe600" />
+      <path d="M 0 -90 L 14 -83 L 14 30 L 0 23 Z" fill="#eab308" />
+      <path d="M 14 -83 L 28 -90 L 28 23 L 14 30 Z" fill="#ca8a04" />
+    </g>
+
+    <g transform="translate(330, 20)">
+      <path d="M 0 -55 L 14 -62 L 28 -55 L 14 -48 Z" fill="#ff6b9d" />
+      <path d="M 0 -55 L 14 -48 L 14 30 L 0 23 Z" fill="#ff2975" />
+      <path d="M 14 -48 L 28 -55 L 28 23 L 14 30 Z" fill="#e11d48" />
+    </g>
+
+    <g transform="translate(360, 35)">
+      <path d="M 0 -25 L 14 -32 L 28 -25 L 14 -18 Z" fill="#60a5fa" />
+      <path d="M 0 -25 L 14 -18 L 14 30 L 0 23 Z" fill="#2563eb" />
+      <path d="M 14 -18 L 28 -25 L 28 23 L 14 30 Z" fill="#1d4ed8" />
+    </g>
+
+    <!-- OCT / NOV / DEC (Super Cyber Towers) -->
+    <g transform="translate(400, -10)">
+      <path d="M 0 -115 L 14 -122 L 28 -115 L 14 -108 Z" fill="#00f3ff" />
+      <path d="M 0 -115 L 14 -108 L 14 30 L 0 23 Z" fill="#0284c7" />
+      <path d="M 14 -108 L 28 -115 L 28 23 L 14 30 Z" fill="#0369a1" />
+    </g>
+
+    <g transform="translate(430, 10)">
+      <path d="M 0 -75 L 14 -82 L 28 -75 L 14 -68 Z" fill="#f222ff" />
+      <path d="M 0 -75 L 14 -68 L 14 30 L 0 23 Z" fill="#c026d3" />
+      <path d="M 14 -68 L 28 -75 L 28 23 L 14 30 Z" fill="#a21caf" />
+    </g>
+
+    <g transform="translate(460, 25)">
+      <path d="M 0 -45 L 14 -52 L 28 -45 L 14 -38 Z" fill="#34d399" />
+      <path d="M 0 -45 L 14 -38 L 14 30 L 0 23 Z" fill="#10b981" />
+      <path d="M 14 -38 L 28 -45 L 28 23 L 14 30 Z" fill="#059669" />
+    </g>
+
+    <g transform="translate(490, 40)">
+      <path d="M 0 -20 L 14 -27 L 28 -20 L 14 -13 Z" fill="#ffe600" />
+      <path d="M 0 -20 L 14 -13 L 14 30 L 0 23 Z" fill="#eab308" />
+      <path d="M 14 -13 L 28 -20 L 28 23 L 14 30 Z" fill="#ca8a04" />
+    </g>
+  </g>
+
+  <!-- Legend Bottom -->
+  <g transform="translate(30, 285)">
+    <text x="0" y="0" class="legend-text">LESS</text>
+    <rect x="35" y="-10" width="12" height="12" rx="2" fill="#1e293b" />
+    <rect x="52" y="-10" width="12" height="12" rx="2" fill="#2563eb" />
+    <rect x="69" y="-10" width="12" height="12" rx="2" fill="#10b981" />
+    <rect x="86" y="-10" width="12" height="12" rx="2" fill="#f59e0b" />
+    <rect x="103" y="-10" width="12" height="12" rx="2" fill="#ff2975" />
+    <rect x="120" y="-10" width="12" height="12" rx="2" fill="#f222ff" />
+    <text x="140" y="0" class="legend-text">MORE</text>
+  </g>
+</svg>
