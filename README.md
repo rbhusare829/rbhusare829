@@ -1,17 +1,28 @@
-<!-- ═══════════════════════════════════════════════════════════════════ -->
-<!--   ROHIT BHUSARE — ULTIMATE DEVOPS PORTFOLIO                        -->
-<!--   GitHub: rbhusare829                                              -->
-<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+<!--   ROHIT BHUSARE — ULTIMATE DEVOPS PORTFOLIO v7.0 BEST EDITION         -->
+<!--   GitHub: rbhusare829  |  Pune, India                                 -->
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
 
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     TOP CAPSULE HEADER                       -->
+<!-- ╚══════════════════════════════════════════╝ -->
 <div align="center">
 
-<!-- HERO BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=header&text=ROHIT%20BHUSARE&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=55&desc=DevOps%20%7C%20Cloud%20%7C%20Automation%20Engineer&descSize=18&descAlignY=78&descColor=f9c80e" width="100%"/>
+
+</div>
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     HERO BANNER                              -->
+<!-- ╚══════════════════════════════════════════╝ -->
+<div align="center">
+
 <img src="./assets/hero-banner.svg" width="900" alt="Rohit Bhusare DevOps Engineer"/>
 
 <br/>
 
 <!-- TYPING ANIMATION -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2500&pause=800&color=FF2975&center=true&vCenter=true&repeat=true&width=800&lines=DevOps+Engineer+%7C+Cloud+Architect;AWS+%7C+Terraform+%7C+Kubernetes+%7C+Docker;CI%2FCD+Automation+%7C+Jenkins+%7C+Ansible;Zero+Downtime.+Zero+Manual+Steps.+Full+Auto.)](https://github.com/rbhusare829)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=2500&pause=800&color=FF2975&center=true&vCenter=true&repeat=true&width=800&lines=DevOps+Engineer+%7C+Cloud+Architect;AWS+%7C+Terraform+%7C+Kubernetes+%7C+Docker;CI%2FCD+Automation+%7C+Jenkins+%7C+Ansible;Zero+Downtime.+Zero+Manual+Steps.+Full+Auto.;Building+Scalable+Infra+%F0%9F%94%A5;Infrastructure+as+Code+%7C+IaC+Expert)](https://github.com/rbhusare829)
 
 <br/>
 
@@ -25,9 +36,13 @@
 
 ---
 
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     ABOUT ME                                 -->
+<!-- ╚══════════════════════════════════════════╝ -->
+
 ## 🧑‍💻 About Me
 
-<img align="right" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="300" alt="Coding animation"/>
+<img align="right" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="280" alt="Coding animation"/>
 
 ```yaml
 name       : Rohit Bhusare
@@ -44,53 +59,106 @@ skills:
   languages: [Python, Bash, YAML]
 
 mission    : "Zero manual steps. Zero downtime. Full automation."
-status     : Open to Work
+status     : Open to Work  🟢
 ```
 
 <br clear="right"/>
 
 ---
 
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     CERTIFICATIONS                           -->
+<!-- ╚══════════════════════════════════════════╝ -->
+
+## 🏆 Certifications & Achievements
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/AWS-Solutions%20Architect-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white&labelColor=0d0633" height="38"/>
+&nbsp;
+<img src="https://img.shields.io/badge/DevOps-Certified%20Engineer-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=0d0633" height="38"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Terraform-HashiCorp%20Certified-7B42BC?style=for-the-badge&logo=terraform&logoColor=white&labelColor=0d0633" height="38"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Linux-RHEL%20Certified-FCC624?style=for-the-badge&logo=redhat&logoColor=white&labelColor=0d0633" height="38"/>
+
+</div>
+
+---
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     ANIMATED CAREER TIMELINE                 -->
+<!-- ╚══════════════════════════════════════════╝ -->
+
+## 🗓️ Career Journey
+
+<div align="center">
+
+```
+2021 ──────────────────────────────────────────────────────────────── 2025+
+  │                                                                      │
+  🎓 B.Tech IT          💻 Linux + AWS        🚀 DevOps Projects      🟢 Open to Work
+  Completed             Self-Learned          25+ Repos Built         Full-Time Role
+  │                     │                     │                        │
+  ▼                     ▼                     ▼                        ▼
+[Foundation]       [Cloud Skills]      [Terraform+K8s+CI/CD]    [Cloud DevOps Role]
+```
+
+| Year | Milestone | Tech Learned |
+|:----:|:----------|:-------------|
+| 2021 | Started DevOps Journey | Linux, Bash, Networking |
+| 2022 | AWS Cloud Deep Dive | EC2, VPC, S3, RDS, IAM, EFS |
+| 2023 | Infrastructure as Code | Terraform, Ansible, CloudWatch |
+| 2024 | Container Orchestration | Docker, Kubernetes, Jenkins CI/CD |
+| 2025 | Full Automation Expert | GitHub Actions, Pipeline Design, IaC |
+
+</div>
+
+---
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     TECH STACK — ANIMATED                    -->
+<!-- ╚══════════════════════════════════════════╝ -->
+
 ## ⚡ Tech Stack
 
 <div align="center">
 
-<!-- 🔥 ROW 1 — Spinning 3D Animated Icons (techstack-generator) -->
-<img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65" title="AWS"/>
-<img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" title="Docker"/>
-<img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="65" height="65" title="Kubernetes"/>
-<img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" title="Python"/>
-<img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" title="GitHub"/>
-<img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65" title="MySQL"/>
-<img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="NGINX" width="65" height="65" title="NGINX"/>
-<img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65" title="Java"/>
+<!-- 🔥 ROW 1 — Spinning 3D Animated Icons -->
+<img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="65" height="65"/>
+<img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65"/>
+<img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="Kubernetes" width="65" height="65"/>
+<img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65"/>
+<img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65"/>
+<img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="MySQL" width="65" height="65"/>
+<img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="NGINX" width="65" height="65"/>
+<img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65"/>
 
 <br/><br/>
 
-<!-- 🌊 ROW 2 — Animated Skill Icons with glow effect -->
+<!-- 🌊 ROW 2 — Skill Icons with glow -->
 <img src="https://skillicons.dev/icons?i=terraform,ansible,jenkins,githubactions,git,linux,bash,vim&theme=dark&perline=8"/>
 
 <br/><br/>
 
-<!-- 🌊 ROW 3 — Monitoring + DB + Web stack -->
+<!-- 🌊 ROW 3 — Full Stack -->
 <img src="https://skillicons.dev/icons?i=aws,nginx,mysql,ubuntu,python,bash,git,github&theme=dark&perline=8"/>
 
 </div>
 
 <br/>
 
-<!-- 🎬 ANIMATED MARQUEE-STYLE BADGE ROW -->
 <div align="center">
 
-![AWS](https://img.shields.io/badge/AWS-%E2%98%81%EF%B8%8F_Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white&labelColor=1a0b2e)
-![Terraform](https://img.shields.io/badge/Terraform-%F0%9F%8F%97%EF%B8%8F_IaC-7B42BC?style=for-the-badge&logo=terraform&logoColor=white&labelColor=1a0b2e)
-![Docker](https://img.shields.io/badge/Docker-%F0%9F%90%B3_Container-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=1a0b2e)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-%E2%98%B8%EF%B8%8F_Orchestrate-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=1a0b2e)
+![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white&labelColor=1a0b2e)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-7B42BC?style=for-the-badge&logo=terraform&logoColor=white&labelColor=1a0b2e)
+![Docker](https://img.shields.io/badge/Docker-Container-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=1a0b2e)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestrate-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=1a0b2e)
 
-![Jenkins](https://img.shields.io/badge/Jenkins-%F0%9F%94%81_CI%2FCD-D24939?style=for-the-badge&logo=jenkins&logoColor=white&labelColor=1a0b2e)
-![Ansible](https://img.shields.io/badge/Ansible-%F0%9F%93%A6_Automate-EE0000?style=for-the-badge&logo=ansible&logoColor=white&labelColor=1a0b2e)
-![Linux](https://img.shields.io/badge/Linux-%F0%9F%90%A7_OS-FCC624?style=for-the-badge&logo=linux&logoColor=black&labelColor=1a0b2e)
-![Python](https://img.shields.io/badge/Python-%F0%9F%90%8D_Scripting-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=1a0b2e)
+![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-D24939?style=for-the-badge&logo=jenkins&logoColor=white&labelColor=1a0b2e)
+![Ansible](https://img.shields.io/badge/Ansible-Automate-EE0000?style=for-the-badge&logo=ansible&logoColor=white&labelColor=1a0b2e)
+![Linux](https://img.shields.io/badge/Linux-OS-FCC624?style=for-the-badge&logo=linux&logoColor=black&labelColor=1a0b2e)
+![Python](https://img.shields.io/badge/Python-Scripting-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=1a0b2e)
 
 </div>
 
@@ -114,6 +182,10 @@ status     : Open to Work
 
 ---
 
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     LIVE CI/CD PIPELINE                      -->
+<!-- ╚══════════════════════════════════════════╝ -->
+
 ## 🚀 Live CI/CD Pipeline
 
 <div align="center">
@@ -121,6 +193,10 @@ status     : Open to Work
 </div>
 
 ---
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     FEATURED PROJECTS                        -->
+<!-- ╚══════════════════════════════════════════╝ -->
 
 ## 📂 Featured Projects
 
@@ -171,6 +247,37 @@ status     : Open to Work
 
 ---
 
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     GITHUB STATS                             -->
+<!-- ╚══════════════════════════════════════════╝ -->
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=rbhusare829&show_icons=true&include_all_commits=true&count_private=true&theme=synthwave&hide_border=true&bg_color=0d0633&ring_color=f222ff&title_color=ff2975&icon_color=f9c80e"/>
+&nbsp;
+<img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=rbhusare829&theme=synthwave&hide_border=true&background=0d0633&ring=f222ff&fire=ff2975&currStreakLabel=f9c80e"/>
+
+<br/><br/>
+
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rbhusare829&layout=donut&langs_count=8&theme=synthwave&hide_border=true&bg_color=0d0633&title_color=ff2975"/>
+&nbsp;
+<img height="180" src="https://github-profile-trophy.vercel.app/?username=rbhusare829&theme=radical&no-frame=true&no-bg=true&row=2&column=3&margin-w=6"/>
+
+<br/><br/>
+
+<!-- Activity Graph -->
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=rbhusare829&bg_color=0d0633&color=ff2975&line=f222ff&point=f9c80e&area=true&area_color=1a0b2e&hide_border=true&custom_title=Rohit%27s%20Contribution%20Graph" width="95%" alt="Contribution Graph"/>
+
+</div>
+
+---
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     3D CONTRIBUTION CITY                     -->
+<!-- ╚══════════════════════════════════════════╝ -->
+
 ## 🏙️ 3D Contribution City
 
 <div align="center">
@@ -179,67 +286,84 @@ status     : Open to Work
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=rbhusare829&show_icons=true&include_all_commits=true&count_private=true&theme=synthwave&hide_border=true&bg_color=0d0633"/>
-&nbsp;
-<img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=rbhusare829&theme=synthwave&hide_border=true&background=0d0633"/>
-
-<br/><br/>
-
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rbhusare829&layout=donut&langs_count=8&theme=synthwave&hide_border=true&bg_color=0d0633"/>
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=rbhusare829&bg_color=0d0633&color=ff2975&line=f222ff&point=f9c80e&area=true&area_color=1a0b2e&hide_border=true" width="95%" alt="Contribution Graph"/>
-
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=rbhusare829&theme=radical&no-frame=true&no-bg=true&row=1&column=7&margin-w=6" width="100%" alt="Trophies"/>
-
-</div>
-
----
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     CONTRIBUTION SNAKE                       -->
+<!-- ╚══════════════════════════════════════════╝ -->
 
 ## 🐍 Contribution Snake
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/rbhusare829/rbhusare829/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rbhusare829/rbhusare829/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rbhusare829/rbhusare829/output/github-contribution-grid-snake.svg"/>
+  <img src="https://raw.githubusercontent.com/rbhusare829/rbhusare829/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake"/>
+</picture>
 </div>
 
 ---
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     GITHUB WORKFLOW STATUS                   -->
+<!-- ╚══════════════════════════════════════════╝ -->
+
+## ⚙️ Workflow Status
+
+<div align="center">
+
+[![Snake Animation](https://img.shields.io/github/actions/workflow/status/rbhusare829/rbhusare829/snake.yml?label=Snake%20Animation&style=for-the-badge&logo=github-actions&logoColor=white&labelColor=1a0b2e&color=10b981)](https://github.com/rbhusare829/rbhusare829/actions/workflows/snake.yml)
+[![3D Profile](https://img.shields.io/github/actions/workflow/status/rbhusare829/rbhusare829/profile-3d.yml?label=3D%20Profile%20Graph&style=for-the-badge&logo=github-actions&logoColor=white&labelColor=1a0b2e&color=f222ff)](https://github.com/rbhusare829/rbhusare829/actions/workflows/profile-3d.yml)
+[![README Updated](https://img.shields.io/badge/README-v7.0%20BEST-ff2975?style=for-the-badge&logo=markdown&logoColor=white&labelColor=1a0b2e)](https://github.com/rbhusare829/rbhusare829)
+
+</div>
+
+---
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     CONNECT WITH ME                          -->
+<!-- ╚══════════════════════════════════════════╝ -->
 
 ## 🤝 Connect With Me
 
 <div align="center">
 
 <a href="https://www.linkedin.com/in/rbhusare829/">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1a0b2e" height="42"/>
+<img src="https://img.shields.io/badge/LinkedIn-Connect%20Now-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1a0b2e" height="42"/>
 </a>&nbsp;&nbsp;
 <a href="mailto:rbhusare829@gmail.com">
 <img src="https://img.shields.io/badge/Gmail-rbhusare829%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a0b2e" height="42"/>
 </a>&nbsp;&nbsp;
 <a href="https://github.com/rbhusare829">
-<img src="https://img.shields.io/badge/GitHub-Follow-f9c80e?style=for-the-badge&logo=github&logoColor=black&labelColor=1a0b2e" height="42"/>
+<img src="https://img.shields.io/badge/GitHub-Follow%20Me-f9c80e?style=for-the-badge&logo=github&logoColor=black&labelColor=1a0b2e" height="42"/>
 </a>
 
 <br/><br/>
 
+<!-- Random Dev Quote -->
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" width="80%" alt="Dev Quote"/>
+
+<br/><br/>
+
+<!-- Random Dev Joke -->
 <img src="https://readme-jokes.vercel.app/api?theme=radical&hideBorder" alt="Dev Joke" width="60%"/>
 
 <br/><br/>
 
-> ⚡ **If automation can do it, it should. If a human is doing it, something is wrong.**
+> ⚡ **_"If automation can do it, it should. If a human is doing it, something is wrong."_**
 
 <br/>
 
-**Thanks for visiting! Don't forget to star ⭐ a repo if you found it useful!**
+**Thanks for visiting! Drop a ⭐ star if you found any repo useful!**
+
+<br/>
+
+<!-- Animated wave GIF -->
+<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" alt="Animated divider"/>
 
 </div>
 
-<!-- FOOTER -->
+<!-- ╔══════════════════════════════════════════╗ -->
+<!--     FOOTER                                   -->
+<!-- ╚══════════════════════════════════════════╝ -->
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=AUTOMATE%20EVERYTHING&fontSize=24&fontColor=ffffff&animation=twinkling&fontAlignY=70" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=130&section=footer&text=AUTOMATE%20EVERYTHING&fontSize=26&fontColor=ffffff&animation=twinkling&fontAlignY=68&desc=Built%20with%20passion%20by%20Rohit%20Bhusare%20%F0%9F%94%A5&descSize=14&descAlignY=88&descColor=f9c80e" width="100%"/>
 </div>
