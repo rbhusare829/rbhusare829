@@ -1,16 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="100%" height="100%">
   <defs>
-    <!-- CSS Styles -->
     <style>
       .bg { fill: #080314; }
-      
-      /* Synthwave Grid Animation */
+
+      /* Grid Lines */
       .grid-line {
         stroke: #f222ff;
         stroke-width: 1.2;
         stroke-opacity: 0.4;
       }
-      
+
       .grid-horiz {
         stroke: #ff2975;
         stroke-width: 1.5;
@@ -23,35 +22,36 @@
         100% { transform: translateY(24px); }
       }
 
-      /* Glow Effects */
-      .glow-pink {
-        filter: drop-shadow(0px 0px 8px #ff2975) drop-shadow(0px 0px 20px #ff2975);
-      }
-      .glow-cyan {
-        filter: drop-shadow(0px 0px 8px #00f3ff) drop-shadow(0px 0px 18px #00f3ff);
-      }
-      .glow-gold {
-        filter: drop-shadow(0px 0px 6px #f9c80e) drop-shadow(0px 0px 14px #f9c80e);
-      }
-      .glow-box {
-        filter: drop-shadow(0px 0px 12px rgba(242, 34, 255, 0.4));
-      }
+      /* Glow Filters */
+      .glow-pink { filter: drop-shadow(0px 0px 8px #ff2975); }
+      .glow-cyan { filter: drop-shadow(0px 0px 8px #00f3ff); }
+      .glow-gold { filter: drop-shadow(0px 0px 6px #f9c80e); }
 
-      /* Text Styles */
+      /* Text Formatting */
       .title-name {
-        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
         font-weight: 900;
-        font-size: 48px;
-        letter-spacing: 6px;
+        font-size: 46px;
+        letter-spacing: 5px;
         fill: #ffffff;
       }
 
+      .title-glow {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 900;
+        font-size: 46px;
+        letter-spacing: 5px;
+        fill: #ff2975;
+        filter: drop-shadow(0px 0px 10px #ff2975);
+      }
+
       .subtitle {
-        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
         font-weight: 700;
         font-size: 18px;
         letter-spacing: 4px;
         fill: #00f3ff;
+        filter: drop-shadow(0px 0px 6px #00f3ff);
       }
 
       .tagline {
@@ -63,21 +63,11 @@
       }
 
       .badge-text {
-        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
         font-weight: 700;
         font-size: 11px;
         fill: #ffffff;
         letter-spacing: 1.5px;
-      }
-
-      /* Pulsing & Scanning Animations */
-      .pulse-slow {
-        animation: pulse 4s ease-in-out infinite alternate;
-      }
-      
-      @keyframes pulse {
-        0% { opacity: 0.8; }
-        100% { opacity: 1; filter: drop-shadow(0px 0px 15px #ff2975); }
       }
 
       .scanner-line {
@@ -100,42 +90,29 @@
       }
     </style>
 
-    <!-- Sun Gradients -->
+    <!-- Gradients -->
     <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#f9c80e" />
       <stop offset="50%" stop-color="#ff2975" />
       <stop offset="100%" stop-color="#8a2be2" />
     </linearGradient>
 
-    <!-- Horizon Gradient -->
     <linearGradient id="horizonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.8" />
       <stop offset="20%" stop-color="#ff2975" stop-opacity="0.3" />
       <stop offset="100%" stop-color="#080314" stop-opacity="0" />
     </linearGradient>
 
-    <!-- Card Background Gradient -->
     <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a0b2e" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#0a051b" stop-opacity="0.9" />
+      <stop offset="0%" stop-color="#1a0b2e" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0a051b" stop-opacity="0.95" />
     </linearGradient>
 
-    <!-- Badge Border Gradients -->
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ff2975" />
       <stop offset="50%" stop-color="#00f3ff" />
       <stop offset="100%" stop-color="#f222ff" />
     </linearGradient>
-
-    <!-- Sun Mask for Retro Stripes -->
-    <mask id="sunMask">
-      <rect x="0" y="0" width="1000" height="360" fill="white" />
-      <rect x="350" y="150" width="300" height="3" fill="black" />
-      <rect x="350" y="160" width="300" height="4" fill="black" />
-      <rect x="350" y="172" width="300" height="6" fill="black" />
-      <rect x="350" y="186" width="300" height="8" fill="black" />
-      <rect x="350" y="202" width="300" height="10" fill="black" />
-    </mask>
 
     <!-- Floor Clip Path -->
     <clipPath id="floorClip">
@@ -151,7 +128,7 @@
   <!-- Background -->
   <rect width="1000" height="360" class="bg" rx="16" />
 
-  <!-- Stars / Particle Dust -->
+  <!-- Stars -->
   <g fill="#ffffff" opacity="0.6">
     <circle cx="80" cy="40" r="1" />
     <circle cx="150" cy="90" r="1.5" opacity="0.8" />
@@ -164,10 +141,19 @@
     <circle cx="910" cy="150" r="1.2" />
   </g>
 
-  <!-- Retrowave Sun -->
-  <circle cx="500" cy="145" r="85" fill="url(#sunGrad)" mask="url(#sunMask)" class="glow-pink" />
+  <!-- Retro Sun (Drawn as Sliced Arc Bands - No Mask Required!) -->
+  <g transform="translate(500, 145)">
+    <!-- Top Semi Circle -->
+    <path d="M -80 0 A 80 80 0 0 1 80 0 Z" fill="url(#sunGrad)" class="glow-pink" />
+    <!-- Sliced Horizontal Bands -->
+    <rect x="-79" y="6" width="158" height="8" rx="2" fill="url(#sunGrad)" />
+    <rect x="-76" y="18" width="152" height="10" rx="2" fill="url(#sunGrad)" />
+    <rect x="-70" y="32" width="140" height="12" rx="2" fill="url(#sunGrad)" />
+    <rect x="-60" y="48" width="120" height="14" rx="2" fill="url(#sunGrad)" />
+    <rect x="-45" y="66" width="90" height="14" rx="2" fill="url(#sunGrad)" />
+  </g>
 
-  <!-- Mountain Silhouette Line -->
+  <!-- Mountains -->
   <path d="M 0 220 L 120 170 L 220 200 L 340 150 L 440 190 L 500 165 L 560 190 L 680 140 L 780 195 L 880 160 L 1000 220 V 360 H 0 Z" fill="#0c0624" />
   <path d="M 0 220 L 120 170 L 220 200 L 340 150 L 440 190 L 500 165 L 560 190 L 680 140 L 780 195 L 880 160 L 1000 220" fill="none" stroke="#ff2975" stroke-width="2" class="glow-pink" opacity="0.7" />
 
@@ -177,10 +163,7 @@
 
   <!-- Perspective Grid Floor -->
   <g clip-path="url(#floorClip)">
-    <!-- Moving Horizontal Lines -->
     <rect x="0" y="210" width="1000" height="160" fill="url(#gridPattern)" />
-
-    <!-- Perspective Lines -->
     <g class="grid-line">
       <line x1="500" y1="220" x2="-200" y2="360" />
       <line x1="500" y1="220" x2="-50" y2="360" />
@@ -196,10 +179,9 @@
     </g>
   </g>
 
-  <!-- Central Retrowave Frame Overlay -->
+  <!-- Central Frame -->
   <g transform="translate(100, 35)">
-    <!-- Container Card -->
-    <rect x="0" y="0" width="800" height="235" rx="16" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="2" class="glow-box" />
+    <rect x="0" y="0" width="800" height="235" rx="16" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="2" />
 
     <!-- Corner Accents -->
     <path d="M 0 20 L 0 0 L 20 0" fill="none" stroke="#00f3ff" stroke-width="4" />
@@ -209,54 +191,44 @@
 
     <!-- Name & Titles -->
     <g transform="translate(400, 65)" text-anchor="middle">
-      <!-- Glow Underlay -->
-      <text x="0" y="0" class="title-name glow-pink" opacity="0.9">ROHIT BHUSARE</text>
-      <!-- Main Text -->
+      <text x="0" y="0" class="title-glow">ROHIT BHUSARE</text>
       <text x="0" y="0" class="title-name">ROHIT BHUSARE</text>
       
-      <!-- Subtitle -->
-      <text x="0" y="32" class="subtitle glow-cyan">DEVOPS &amp; CLOUD ARCHITECT</text>
+      <text x="0" y="32" class="subtitle">DEVOPS &amp; CLOUD ARCHITECT</text>
       
-      <!-- Terminal Tagline -->
       <g transform="translate(0, 62)">
         <rect x="-240" y="-16" width="480" height="26" rx="6" fill="#080314" stroke="#f9c80e" stroke-width="1.2" class="glow-gold" />
-        <text x="0" y="1" text-anchor="middle" class="tagline">&#x26A1; AUTOMATING CLOUD INFRASTRUCTURE WITH ZERO DOWNTIME &#x26A1;</text>
+        <text x="0" y="1" text-anchor="middle" class="tagline">⚡ AUTOMATING CLOUD INFRASTRUCTURE WITH ZERO DOWNTIME ⚡</text>
       </g>
     </g>
 
-    <!-- Floating Tech Badges Inside Frame -->
+    <!-- Tech Badges -->
     <g transform="translate(50, 168)">
-      <!-- AWS -->
       <g transform="translate(0, 0)" class="float-icon">
         <rect x="0" y="0" width="100" height="34" rx="8" fill="#150a21" stroke="#ff9900" stroke-width="1.5" />
         <text x="50" y="21" text-anchor="middle" class="badge-text" fill="#ff9900">☁️ AWS</text>
       </g>
 
-      <!-- TERRAFORM -->
       <g transform="translate(115, 0)" class="float-icon" style="animation-delay: 0.3s;">
         <rect x="0" y="0" width="125" height="34" rx="8" fill="#150a21" stroke="#7b42bc" stroke-width="1.5" />
         <text x="62" y="21" text-anchor="middle" class="badge-text" fill="#8a2be2">🏗️ TERRAFORM</text>
       </g>
 
-      <!-- DOCKER -->
       <g transform="translate(255, 0)" class="float-icon" style="animation-delay: 0.6s;">
         <rect x="0" y="0" width="110" height="34" rx="8" fill="#150a21" stroke="#2496ed" stroke-width="1.5" />
         <text x="55" y="21" text-anchor="middle" class="badge-text" fill="#00f3ff">🐳 DOCKER</text>
       </g>
 
-      <!-- KUBERNETES -->
       <g transform="translate(380, 0)" class="float-icon" style="animation-delay: 0.9s;">
         <rect x="0" y="0" width="135" height="34" rx="8" fill="#150a21" stroke="#326ce5" stroke-width="1.5" />
         <text x="67" y="21" text-anchor="middle" class="badge-text" fill="#326ce5">☸️ KUBERNETES</text>
       </g>
 
-      <!-- JENKINS -->
       <g transform="translate(530, 0)" class="float-icon" style="animation-delay: 1.2s;">
         <rect x="0" y="0" width="105" height="34" rx="8" fill="#150a21" stroke="#ff2975" stroke-width="1.5" />
         <text x="52" y="21" text-anchor="middle" class="badge-text" fill="#ff2975">🔁 JENKINS</text>
       </g>
 
-      <!-- ANSIBLE -->
       <g transform="translate(650, 0)" class="float-icon" style="animation-delay: 1.5s;">
         <rect x="0" y="0" width="100" height="34" rx="8" fill="#150a21" stroke="#ee0000" stroke-width="1.5" />
         <text x="50" y="21" text-anchor="middle" class="badge-text" fill="#ee0000">📦 ANSIBLE</text>
@@ -264,7 +236,7 @@
     </g>
   </g>
 
-  <!-- Top Laser Scanner Line -->
+  <!-- Laser Lines -->
   <line x1="20" y1="12" x2="100" y2="12" stroke="#00f3ff" stroke-width="3" stroke-linecap="round" class="scanner-line glow-cyan" />
   <line x1="20" y1="348" x2="100" y2="348" stroke="#ff2975" stroke-width="3" stroke-linecap="round" class="scanner-line glow-pink" style="animation-direction: reverse;" />
 </svg>
