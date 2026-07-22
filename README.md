@@ -3,14 +3,6 @@
 <!--   GitHub: rbhusare829  |  Pune, India                                 -->
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
 
-<!-- ╔══════════════════════════════════════════╗ -->
-<!--     TOP CAPSULE HEADER                       -->
-<!-- ╚══════════════════════════════════════════╝ -->
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=160&section=header&text=ROHIT%20BHUSARE&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=55&desc=DevOps%20%7C%20Cloud%20%7C%20Automation%20Engineer&descSize=18&descAlignY=78&descColor=f9c80e" width="100%"/>
-
-</div>
 
 <!-- ╔══════════════════════════════════════════╗ -->
 <!--     HERO BANNER                              -->
